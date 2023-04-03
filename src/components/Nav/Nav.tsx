@@ -1,18 +1,29 @@
+import { Language } from "@/types/language";
 import Link from "next/link";
+import { messages } from "./messages";
+import styles from "./nav.module.css";
 
-export type NavProps = {};
+export type NavProps = {
+  language: Language;
+};
 
-export const Nav = ({}: NavProps): JSX.Element => (
+export const Nav = ({ language }: NavProps): JSX.Element => (
   <nav>
-    <ul>
+    <ul className={styles.list}>
       <li>
-        <Link href="/">Home</Link>
+        <Link className={styles.link} href="/">
+          {messages[language].home}
+        </Link>
       </li>
       <li>
-        <Link href="about">About</Link>
+        <Link className={styles.link} href="about">
+          {messages[language].about}
+        </Link>
       </li>
       <li>
-        <Link href="projects">Projects</Link>
+        <Link className={styles.link} href="projects">
+          {messages[language].projects}
+        </Link>
       </li>
     </ul>
   </nav>

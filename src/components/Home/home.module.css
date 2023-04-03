@@ -1,0 +1,30 @@
+.hero {
+	display: flex;
+
+	height: 70vh;
+	overflow: hidden;
+}
+
+.title {
+	max-width: 900px;
+	margin: auto;
+
+	text-align: center;
+	font-size: 5rem;
+
+	transform: skewY(-5deg);
+}
+
+.hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	border: none;
+	height: 2px;
+	background: #000;
+	opacity: 0.4;
+}
+
+.firstLetter {
+	font-feature-settings: "swsh";
+}
