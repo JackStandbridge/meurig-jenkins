@@ -2,3 +2,9 @@
 	font-size: 4rem;
 	letter-spacing: 5px;
 }
+
+.iframe {
+	border: none;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
