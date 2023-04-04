@@ -1,12 +1,92 @@
 .header {
-	display: flex;
-	gap: 1rem;
-
-	justify-content: space-between;
-
-	max-width: 1100px;
 	margin: auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 
+	position: relative;
+	z-index: 1;
+}
+
+.content {
+	display: flex;
+	gap: 1rem;
+
+	justify-content: space-between;
+}
+
+.mobileToggle {
+	display: none;
+	position: absolute;
+	right: 0;
+
+	width: 3rem;
+	height: 3rem;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	color: inherit;
+
+	z-index: 1;
+}
+
+.mobileToggle::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 80%;
+	height: 2px;
+	color: inherit;
+	background: currentColor;
+
+	transform: translateY(-0.5rem);
+	transition: 0.2s;
+}
+
+.toggled .mobileToggle::before {
+	width: 80%;
+	transform: rotate(-45deg);
+	transform-origin: center;
+}
+
+.mobileToggle::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 40%;
+	height: 2px;
+	background: currentColor;
+
+	transform: translateY(0.5rem);
+	transition: 0.2s;
+}
+
+.toggled .mobileToggle::after {
+	width: 80%;
+	transform: rotate(45deg);
+	transform-origin: center;
+}
+
+@media (max-width: 500px) {
+	.mobileToggle {
+		display: block;
+	}
+
+	.toggled .content {
+		background: var(--background);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		padding: 2rem;
+
+		flex-direction: column;
+	}
+
+	.hidden .content {
+		display: none;
+	}
 }

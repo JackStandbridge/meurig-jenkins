@@ -5,6 +5,7 @@ export type Home = {
     firstLine: string;
     secondLine: string;
   };
+  subtitle: string;
 };
 
 export const messages: Messages<Home> = {
@@ -13,11 +14,13 @@ export const messages: Messages<Home> = {
       firstLine: "Meurig Jenkins",
       secondLine: "ydw i",
     },
+    subtitle: "Gwneuthurwr Ffilm Llawrydd",
   },
   English: {
     title: {
       firstLine: "I am",
       secondLine: "Meurig Jenkins",
     },
+    subtitle: "Freelance Filmmaker",
   },
 };

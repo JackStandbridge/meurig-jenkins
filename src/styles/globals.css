@@ -1,3 +1,17 @@
+:root {
+  --text-primary: rgb(24, 25, 27);
+  --text-secondary: rgb(151, 134, 119);
+  --background: rgb(248, 247, 244)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgb(151, 134, 119);
+    --background: rgb(24, 25, 27);
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,8 +21,31 @@
 html,
 body {
   max-width: 100vw;
+  min-height: 100vh;
+
   overflow-x: hidden;
   font-family: Lato, sans-serif;
+
+  background: var(--background);
+  color: var(--text-primary);
+
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 h1,
@@ -18,6 +55,14 @@ h4,
 h5,
 h6 {
   font-family: Bogart, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: Lato, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 @font-face {
@@ -25,4 +70,16 @@ h6 {
   src: url('/Bogart-Medium.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+  font-family: Lato;
+  src: url('/Lato-Light.ttf');
+}
+
+.screenReader {
+  display: block;
+  position: absolute;
+  max-height: 1px;
+  max-width: 1px;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  opacity: 0;
+}

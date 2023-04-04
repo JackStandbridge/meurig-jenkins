@@ -1,15 +1,9 @@
-import { Language } from "@/types/language";
 import Head from "next/head";
 import { Header } from "../Header";
-import { messages } from "./messages";
+import { Hero } from "../Hero";
 import styles from "./home.module.css";
-import { Fragment } from "react";
 
-export type HomeProps = {
-  language: Language;
-};
-
-export const Home = ({ language }: HomeProps) => (
+export const Home = () => (
   <>
     <Head>
       <title>Meurig Jenkins</title>
@@ -20,32 +14,8 @@ export const Home = ({ language }: HomeProps) => (
 
     <Header />
 
-    <main>
-      <section className={styles.hero}>
-        <h1 className={styles.title}>
-          {messages[language].title.firstLine.split(" ").map((word, i) => (
-            <Fragment key={i}>
-              <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
-                {word[0]}
-              </span>
-
-              <span>{word.slice(1)} </span>
-            </Fragment>
-          ))}
-
-          <hr className={styles.hr} />
-
-          {messages[language].title.secondLine.split(" ").map((word, i) => (
-            <Fragment key={i}>
-              <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
-                {word[0]}
-              </span>
-
-              <span>{word.slice(1)} </span>
-            </Fragment>
-          ))}
-        </h1>
-      </section>
+    <main className={"container " + styles.container}>
+      <Hero />
     </main>
   </>
 );

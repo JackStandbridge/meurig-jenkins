@@ -1,0 +1,53 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	transform: skewY(-7deg);
+
+	width: 100%;
+	min-height: 70vh;
+	overflow: hidden;
+}
+
+.title {
+	text-align: center;
+	font-size: 5rem;
+
+	letter-spacing: 5px;
+}
+
+
+.subtitle {
+	color: var(--text-secondary);
+	font-size: 2rem;
+
+	font-variant-caps: all-small-caps;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	.title {
+		font-size: 3rem;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+	}
+}
+
+.hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	border: none;
+	height: 2px;
+	background: currentColor;
+	opacity: 0.4;
+}
+
+.firstLetter {
+	font-feature-settings: "swsh";
+}

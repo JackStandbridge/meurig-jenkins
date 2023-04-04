@@ -8,19 +8,19 @@ export type NavProps = {
 };
 
 export const Nav = ({ language }: NavProps): JSX.Element => (
-  <nav>
+  <nav className={styles.nav}>
     <ul className={styles.list}>
-      <li>
+      <li className={styles.li}>
         <Link className={styles.link} href="/">
           {messages[language].home}
         </Link>
       </li>
-      <li>
+      <li className={styles.li}>
         <Link className={styles.link} href="about">
           {messages[language].about}
         </Link>
       </li>
-      <li>
+      <li className={styles.li}>
         <Link className={styles.link} href="projects">
           {messages[language].projects}
         </Link>
