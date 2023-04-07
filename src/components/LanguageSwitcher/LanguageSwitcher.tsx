@@ -1,4 +1,10 @@
-import { ChangeEventHandler, useEffect, useRef, useState } from "react";
+import {
+  ChangeEventHandler,
+  Fragment,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import Image from "next/image";
 
 import { isLanguage } from "@/guards/isLanguage";
@@ -89,29 +95,33 @@ export const LanguageSwitcher = ({
         className={expanded ? styles.options : "screenReader"}
       >
         {languages.map((language) => (
-          <label
-            key={language}
-            className={styles.option}
-            onClick={handleDismiss}
-          >
+          <Fragment key={language}>
             <input
               className={"screenReader"}
               type="radio"
               name="language"
               value={language}
               onChange={handleChange}
+              id={language}
             />
 
-            {languageInfo[language].name}
+            <label
+              key={language}
+              className={styles.option}
+              onClick={handleDismiss}
+              htmlFor={language}
+            >
+              {languageInfo[language].name}
 
-            <Image
-              className={styles.icon}
-              width={40}
-              height={40}
-              src={languageInfo[language].flagUrl}
-              alt={language}
-            />
-          </label>
+              <Image
+                className={styles.icon}
+                width={40}
+                height={40}
+                src={languageInfo[language].flagUrl}
+                alt={language}
+              />
+            </label>
+          </Fragment>
         ))}
       </div>
     </div>

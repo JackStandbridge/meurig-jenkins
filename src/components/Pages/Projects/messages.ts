@@ -1,4 +1,4 @@
-import { Messages } from "../../types/messages";
+import { Messages } from "@/types/messages";
 
 export type Projects = {
   title: string;

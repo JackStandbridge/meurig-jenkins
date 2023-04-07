@@ -3,8 +3,12 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 
-	position: relative;
 	z-index: 1;
+	position: sticky;
+	top: 0;
+	background: var(--background);
+
+	min-height: 72px;
 }
 
 .content {

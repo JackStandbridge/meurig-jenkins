@@ -1,4 +1,4 @@
-import { Project } from "@/components/Project";
+import { Project } from "@/components/Pages/Project";
 import { useRouter } from "next/router";
 import { projects } from "@/data/projects";
 
