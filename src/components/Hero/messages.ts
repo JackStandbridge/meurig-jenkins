@@ -1,6 +1,6 @@
-import { Messages } from "../../types/messages";
+import { Messages } from "@/types/messages";
 
-export type Home = {
+export type Hero = {
   title: {
     firstLine: string;
     secondLine: string;
@@ -8,7 +8,7 @@ export type Home = {
   subtitle: string;
 };
 
-export const messages: Messages<Home> = {
+export const messages: Messages<Hero> = {
   Welsh: {
     title: {
       firstLine: "Meurig Jenkins",

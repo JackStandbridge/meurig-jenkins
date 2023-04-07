@@ -1,13 +1,13 @@
 :root {
   --text-primary: rgb(24, 25, 27);
-  --text-secondary: rgb(151, 134, 119);
+  --text-secondary: rgb(153, 113, 93);
   --background: rgb(248, 247, 244)
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text-primary: rgb(255, 255, 255);
-    --text-secondary: rgb(151, 134, 119);
+    --text-secondary: rgb(153, 113, 93);
     --background: rgb(24, 25, 27);
   }
 }
@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   font-family: Lato, sans-serif;
 
-  background: var(--background);
   color: var(--text-primary);
 
   line-height: 1.6;
@@ -54,25 +53,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Bogart, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 p {
-  font-family: Lato, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 1.3rem;
 }
 
 @font-face {
   font-family: Bogart;
-  src: url('/Bogart-Medium.ttf');
+  src: url('/fonts/Bogart-Medium.ttf');
 }
 
 @font-face {
   font-family: Lato;
-  src: url('/Lato-Light.ttf');
+  src: url('/fonts/Lato-Light.ttf');
 }
 
 .screenReader {

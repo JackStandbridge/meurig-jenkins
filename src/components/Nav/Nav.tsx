@@ -16,12 +16,12 @@ export const Nav = ({ language }: NavProps): JSX.Element => (
         </Link>
       </li>
       <li className={styles.li}>
-        <Link className={styles.link} href="about">
+        <Link className={styles.link} href="/about">
           {messages[language].about}
         </Link>
       </li>
       <li className={styles.li}>
-        <Link className={styles.link} href="projects">
+        <Link className={styles.link} href="/projects">
           {messages[language].projects}
         </Link>
       </li>

@@ -9,13 +9,13 @@ export const languageInfo: Record<
 > = {
   Welsh: {
     name: "Cymraeg",
-    flagUrl: "/wales.png",
+    flagUrl: "/icons/wales.png",
   },
 
   English: {
     name: "English",
-    // flagUrl: "/uk.png",
-    flagUrl: "/england.png",
+    // flagUrl: "/icons/uk.png",
+    flagUrl: "/icons/england.png",
   },
 };
 

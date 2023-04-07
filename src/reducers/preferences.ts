@@ -6,7 +6,7 @@ export type PreferencesState = {
 };
 
 const initialState: PreferencesState = {
-  language: "Welsh",
+  language: "English",
 };
 
 const updateLanguageReducer = (
