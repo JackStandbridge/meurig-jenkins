@@ -6,6 +6,7 @@ All content is stored in the [content](./src/content) folder. To make changes to
 
 E.g. changing the description of the Hydeout Espresso Martini Advert project:
 - Go to the [projects file](./src/content/projects.ts).
+- Click on the edit button in the top right of the file.
 - Find the section of the file that contains the content for the Martini project.
 - Find the description section of the data.
 - Update the text (make sure that all languages are updated).
