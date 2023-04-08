@@ -55,6 +55,15 @@
 	position: absolute;
 }
 
+.option {
+	display: flex;
+	padding: 0 0.5rem;
+	gap: 0.4rem;
+	align-items: center;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
 @media (max-width: 500px) {
 	.options {
 		top: unset;
@@ -63,15 +72,10 @@
 		padding: unset;
 		box-shadow: none;
 	}
-}
 
-.option {
-	display: flex;
-	padding: 0 0.5rem;
-	gap: 0.4rem;
-	align-items: center;
-	justify-content: flex-end;
-	cursor: pointer;
+	.option {
+		padding: unset;
+	}
 }
 
 input:focus-visible + .option {
