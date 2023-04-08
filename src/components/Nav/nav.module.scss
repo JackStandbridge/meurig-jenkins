@@ -1,3 +1,5 @@
+@use '@/styles/mixins';
+
 .list {
 	display: flex;
 
@@ -15,6 +17,10 @@
 }
 
 .link {
+	@include mixins.inner-focus;
+
+	scroll-margin-top: 0;
+
 	display: block;
 	margin-left: -0.5rem;
 	margin-right: -0.5rem;

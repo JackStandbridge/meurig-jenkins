@@ -2,7 +2,7 @@ import { Projects } from "@/data/projects";
 import { Language } from "@/types/language";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./cards.module.css";
+import styles from "./cards.module.scss";
 
 export type CardsProps = {
   items: Projects;

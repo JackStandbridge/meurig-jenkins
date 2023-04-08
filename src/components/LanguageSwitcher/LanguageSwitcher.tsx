@@ -11,7 +11,7 @@ import { isLanguage } from "@/guards/isLanguage";
 import { Language, languageInfo, languages } from "@/types/language";
 import { messages } from "./messages";
 
-import styles from "./languageSwitcher.module.css";
+import styles from "./languageSwitcher.module.scss";
 
 export type LanguageSwitcherProps = {
   language: Language;
@@ -24,9 +24,26 @@ export const LanguageSwitcher = ({
 }: LanguageSwitcherProps): JSX.Element => {
   const [expanded, setExpanded] = useState(false);
 
-  const ref = useRef<HTMLButtonElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    const keyListener = ({ key, target }: KeyboardEvent) => {
+      if (key === "Escape") {
+        setExpanded(false);
+        return;
+      }
+
+      if (key === "Enter") {
+        if (!(target instanceof HTMLElement)) {
+          return;
+        }
+
+        if (target.closest(`.${styles.options}`)) {
+          setExpanded(false);
+        }
+      }
+    };
+
     const clickListener = ({ target }: MouseEvent) => {
       if (!target) {
         return;
@@ -42,9 +59,11 @@ export const LanguageSwitcher = ({
     };
 
     document.addEventListener("click", clickListener);
+    document.addEventListener("keydown", keyListener);
 
     return () => {
       document.removeEventListener("click", clickListener);
+      document.removeEventListener("keydown", keyListener);
     };
   }, []);
 
@@ -54,7 +73,7 @@ export const LanguageSwitcher = ({
 
   const handleDismiss = () => {
     setExpanded(false);
-    ref.current?.focus();
+    buttonRef.current?.focus();
   };
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
@@ -71,7 +90,7 @@ export const LanguageSwitcher = ({
   return (
     <div className={styles.container}>
       <button
-        ref={ref}
+        ref={buttonRef}
         onClick={handleClick}
         className={styles.button}
         defaultValue={language}
@@ -92,33 +111,34 @@ export const LanguageSwitcher = ({
       <div
         id={popupId}
         aria-labelledby={buttonId}
-        className={expanded ? styles.options : "screenReader"}
+        className={expanded ? styles.options : styles.optionsHidden}
       >
-        {languages.map((language) => (
-          <Fragment key={language}>
+        {languages.map((lang) => (
+          <Fragment key={lang}>
             <input
               className={"screenReader"}
               type="radio"
+              checked={language === lang}
               name="language"
-              value={language}
+              value={lang}
               onChange={handleChange}
-              id={language}
+              id={lang}
             />
 
             <label
-              key={language}
+              key={lang}
               className={styles.option}
               onClick={handleDismiss}
-              htmlFor={language}
+              htmlFor={lang}
             >
-              {languageInfo[language].name}
+              {languageInfo[lang].name}
 
               <Image
                 className={styles.icon}
                 width={40}
                 height={40}
-                src={languageInfo[language].flagUrl}
-                alt={language}
+                src={languageInfo[lang].flagUrl}
+                alt={lang}
               />
             </label>
           </Fragment>

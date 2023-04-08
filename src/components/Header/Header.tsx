@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Nav } from "@/components/Nav";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 export type HeaderProps = {};
 

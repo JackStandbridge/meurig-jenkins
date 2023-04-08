@@ -1,6 +1,6 @@
 import { Language } from "@/types/language";
 import { messages } from "./messages";
-import styles from "./about.module.css";
+import styles from "./about.module.scss";
 import { Page } from "@/components/Page";
 
 export type AboutProps = {

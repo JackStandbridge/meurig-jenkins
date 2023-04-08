@@ -2,7 +2,7 @@ import Head from "next/head";
 import { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export type PageProps = {
   children: ReactNode;
@@ -26,6 +26,7 @@ export const Page = ({
     <div className={styles.container}>
       <Header />
       <main>{children}</main>
+      <hr className={styles.divider} />
       <Footer />
     </div>
   </>

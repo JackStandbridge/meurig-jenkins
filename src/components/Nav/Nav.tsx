@@ -1,7 +1,7 @@
 import { Language } from "@/types/language";
 import Link from "next/link";
 import { messages } from "./messages";
-import styles from "./nav.module.css";
+import styles from "./nav.module.scss";
 
 export type NavProps = {
   language: Language;

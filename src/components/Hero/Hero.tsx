@@ -1,6 +1,6 @@
 import { Language } from "@/types/language";
 import { Fragment } from "react";
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 import { messages } from "./messages";
 
 export type HeroProps = {

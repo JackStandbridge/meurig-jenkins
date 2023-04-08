@@ -1,7 +1,7 @@
 import { Language } from "@/types/language";
 import { projects } from "@/data/projects";
 
-import styles from "./project.module.css";
+import styles from "./project.module.scss";
 import { Page } from "@/components/Page";
 
 export type ProjectProps = {

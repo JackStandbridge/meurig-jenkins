@@ -1,7 +1,11 @@
+@use 'mixins';
+
 :root {
   --text-primary: rgb(24, 25, 27);
   --text-secondary: rgb(153, 113, 93);
-  --background: rgb(248, 247, 244)
+  --background: rgb(248, 247, 244);
+  --light-focus: rgb(255, 221, 0);
+  --dark-focus: rgb(0, 0, 0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +20,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  scroll-margin-top: 5rem;
 }
 
 html,
@@ -65,4 +71,6 @@ p {
   max-width: 1px;
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   opacity: 0;
+
+  scroll-margin-top: 0;
 }

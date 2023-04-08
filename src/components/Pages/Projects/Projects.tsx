@@ -1,7 +1,7 @@
 import { Language } from "@/types/language";
 import { Cards } from "@/components/Cards";
 import { messages } from "./messages";
-import styles from "./projects.module.css";
+import styles from "./projects.module.scss";
 import { projects } from "@/data/projects";
 import { Page } from "@/components/Page";
 
