@@ -28,8 +28,7 @@ export const Footer = ({}: FooterProps): JSX.Element => (
                 />
                 <path
                   d="M93.333 117.558l61.334-34.89-61.334-34.893z"
-                  fill="currentColor"
-                  filter="invert(1)"
+                  className={styles.invert}
                 />
               </svg>
             </a>
