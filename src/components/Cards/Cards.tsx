@@ -1,5 +1,5 @@
-import { Projects } from "@/data/projects";
 import { Language } from "@/types/language";
+import { Projects } from "@/types/messages";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./cards.module.scss";

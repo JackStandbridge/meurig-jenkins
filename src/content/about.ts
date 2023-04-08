@@ -1,11 +1,6 @@
-import { Messages } from "@/types/messages";
+import type { AboutPage } from "@/types/messages";
 
-export type About = {
-  title: string;
-  blurb: string;
-};
-
-export const messages: Messages<About> = {
+export const content: AboutPage = {
   Welsh: {
     title: "Amdanaf i",
     blurb:

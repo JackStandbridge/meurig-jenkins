@@ -1,5 +1,5 @@
 import { Language } from "@/types/language";
-import { projects } from "@/data/projects";
+import { content } from "@/content/projects";
 
 import styles from "./project.module.scss";
 import { Page } from "@/components/Page";
@@ -10,14 +10,14 @@ export type ProjectProps = {
 };
 
 export const Project = ({ language, id }: ProjectProps): JSX.Element => {
-  const messages = projects[id].messages[language];
+  const messages = content.projects[id].messages[language];
 
   return (
     <Page description="Projects by Meurig Jenkins" pageName="Projects">
       <h1>{messages.title}</h1>
       <iframe
         className={styles.iframe}
-        src={`https://www.youtube.com/embed/${projects[id].videoId}`}
+        src={`https://www.youtube.com/embed/${content.projects[id].videoId}`}
         title={messages.title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen

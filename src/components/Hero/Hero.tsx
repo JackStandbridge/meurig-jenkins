@@ -1,7 +1,7 @@
 import { Language } from "@/types/language";
 import { Fragment } from "react";
+import { content } from "@/content/home";
 import styles from "./hero.module.scss";
-import { messages } from "./messages";
 
 export type HeroProps = {
   language: Language;
@@ -10,7 +10,7 @@ export type HeroProps = {
 export const Hero = ({ language }: HeroProps): JSX.Element => (
   <section className={styles.hero}>
     <h1 className={styles.title}>
-      {messages[language].title.firstLine.split(" ").map((word, i) => (
+      {content[language].title.firstLine.split(" ").map((word, i) => (
         <Fragment key={i}>
           <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
             {word[0]}
@@ -22,7 +22,7 @@ export const Hero = ({ language }: HeroProps): JSX.Element => (
 
       <hr className={styles.hr} />
 
-      {messages[language].title.secondLine.split(" ").map((word, i) => (
+      {content[language].title.secondLine.split(" ").map((word, i) => (
         <Fragment key={i}>
           <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
             {word[0]}
@@ -33,6 +33,6 @@ export const Hero = ({ language }: HeroProps): JSX.Element => (
       ))}
     </h1>
 
-    <p className={styles.subtitle}>{messages[language].subtitle}</p>
+    <p className={styles.subtitle}>{content[language].subtitle}</p>
   </section>
 );

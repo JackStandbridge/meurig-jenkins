@@ -1,14 +1,6 @@
-import { Messages } from "@/types/messages";
+import type { HomePage } from "@/types/messages";
 
-export type Hero = {
-  title: {
-    firstLine: string;
-    secondLine: string;
-  };
-  subtitle: string;
-};
-
-export const messages: Messages<Hero> = {
+export const content: HomePage = {
   Welsh: {
     title: {
       firstLine: "Meurig Jenkins",

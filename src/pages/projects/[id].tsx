@@ -1,6 +1,6 @@
 import { Project } from "@/components/Pages/Project";
 import { useRouter } from "next/router";
-import { projects } from "@/data/projects";
+import { content } from "@/content/projects";
 
 const ProjectsPage = () => {
   const router = useRouter();
@@ -11,7 +11,7 @@ const ProjectsPage = () => {
     return;
   }
 
-  if (typeof id === "string" && id in projects) {
+  if (typeof id === "string" && id in content.projects) {
     return <Project id={id} />;
   }
 

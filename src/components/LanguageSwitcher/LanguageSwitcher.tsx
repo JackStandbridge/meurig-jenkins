@@ -9,7 +9,7 @@ import Image from "next/image";
 
 import { isLanguage } from "@/guards/isLanguage";
 import { Language, languageInfo, languages } from "@/types/language";
-import { messages } from "./messages";
+import { content } from "@/content/site";
 
 import styles from "./languageSwitcher.module.scss";
 
@@ -97,7 +97,9 @@ export const LanguageSwitcher = ({
         aria-controls={popupId}
         id={buttonId}
       >
-        <span className={"screenReader"}>{messages[language].prompt}</span>
+        <span className={"screenReader"}>
+          {content.languageSwitcher[language].prompt}
+        </span>
 
         <Image
           className={styles.icon}

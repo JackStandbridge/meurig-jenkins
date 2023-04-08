@@ -1,6 +1,6 @@
 import { Language } from "@/types/language";
 import Link from "next/link";
-import { messages } from "./messages";
+import { content } from "@/content/site";
 import styles from "./nav.module.scss";
 
 export type NavProps = {
@@ -12,17 +12,17 @@ export const Nav = ({ language }: NavProps): JSX.Element => (
     <ul className={styles.list}>
       <li className={styles.li}>
         <Link className={styles.link} href="/">
-          {messages[language].home}
+          {content.nav[language].home}
         </Link>
       </li>
       <li className={styles.li}>
         <Link className={styles.link} href="/about">
-          {messages[language].about}
+          {content.nav[language].about}
         </Link>
       </li>
       <li className={styles.li}>
         <Link className={styles.link} href="/projects">
-          {messages[language].projects}
+          {content.nav[language].projects}
         </Link>
       </li>
     </ul>
