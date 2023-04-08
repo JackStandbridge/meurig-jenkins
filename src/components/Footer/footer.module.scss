@@ -1,8 +1,43 @@
+@use '@/styles/mixins';
+
 .footer {
 	margin-top: auto;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 
 	display: flex;
-	justify-content: flex-end;
+
+	justify-content: space-between;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list {
+	list-style-type: none;
+	display: flex;
+	gap: 1rem;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.link {
+	@include mixins.outer-focus;
+
+	color: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 40px;
+	width: 40px;
+}
+
+.info {
+	margin-left: auto;
+	font-size: 1rem;
 }
