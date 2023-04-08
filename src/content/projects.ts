@@ -134,7 +134,7 @@ export const content: ProjectsPage = {
           description: `
             Edrychwch pa mor dawel yw e.
 
-            Cyfarwyddwyd gan Meurig Jenkins
+            Cyfarwyddwyd gan Meurig Jenkins.
           `,
         },
         English: {
@@ -142,7 +142,7 @@ export const content: ProjectsPage = {
           description: `
             Look at how calm he is.
 
-            Directed by Meurig Jenkins
+            Directed by Meurig Jenkins.
           `,
         },
       },
