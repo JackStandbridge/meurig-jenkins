@@ -6,6 +6,8 @@ export type Nav = Messages<{
   home: string;
   about: string;
   projects: string;
+  personal: string;
+  commercial: string;
 }>;
 
 export type LanguageSwitcher = Messages<{
@@ -27,13 +29,14 @@ export type AboutPage = Messages<{
 
 export type Project = {
   id: string;
+  type: "personal" | "commercial";
   videoId: string;
   poster: string;
   messages: Messages<{ title: string; description: string }>;
 };
 
-export type Projects = Record<string, Project>;
+export type ProjectList = Record<string, Project>;
 
 export type ProjectsPage = Messages<{
   title: string;
-}> & { projects: Projects };
+}> & { projects: ProjectList };

@@ -1,5 +1,17 @@
 @use '@/styles/mixins';
 
+.nav {
+	display: flex;
+	align-items: center;
+
+	@include mixins.mobile {
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		flex: 1
+	}
+}
+
 .list {
 	display: flex;
 
@@ -7,13 +19,22 @@
 	list-style: none;
 
 	text-transform: uppercase;
-}
 
+	@include mixins.mobile {
+		flex-direction: column;
+		width: 100%;
+	}
+}
 
 .li {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	position: relative;
+
+	justify-content: space-between;
+	width: 100%;
+
 }
 
 .link {
@@ -30,21 +51,74 @@
 	text-decoration: none;
 	color: inherit;
 	letter-spacing: 2px;
-}
 
-@media (max-width: 500px) {
-	.list {
-		flex-direction: column;
-	}
-
-	.nav {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex: 1
-	}
-
-	.link {
+	@include mixins.mobile {
 		font-size: 1.3rem;
 	}
+}
+
+.dropdownButton {
+	@include mixins.outer-focus;
+	opacity: 0;
+
+	background: none;
+	border: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:focus-visible {
+		opacity: 1;
+	}
+
+	@include mixins.mobile {
+		opacity: 1;
+	}
+}
+
+.chevron {
+	transform: rotate(90deg);
+}
+
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	padding: 0.5rem 1rem;
+	background: var(--background);
+
+	visibility: hidden;
+
+	transition: 0s 0.2s;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	border-radius: 0.5rem;
+
+	@include mixins.mobile {
+		box-shadow: none;
+	}
+
+	.li:hover & {
+		transition: 0s;
+		visibility: visible;
+
+		@include mixins.mobile {
+			visibility: hidden;
+		}
+	}
+
+	&:focus-within {
+		opacity: 1;
+	}
+}
+
+.dropdownExpanded {
+	@extend .dropdown;
+
+	visibility: visible !important;
 }

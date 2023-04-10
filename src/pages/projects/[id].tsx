@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     return <Project id={id} />;
   }
 
-  return <div>404</div>;
+  router.push("/projects");
 };
 
 export default ProjectsPage;

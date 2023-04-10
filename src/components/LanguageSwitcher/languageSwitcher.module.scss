@@ -48,6 +48,14 @@
 	border-radius: 0.5rem;
 
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+
+	@include mixins.mobile {
+		top: unset;
+		right: 0;
+		bottom: 110%;
+		padding: unset;
+		box-shadow: none;
+	}
 }
 
 .optionsHidden {
@@ -62,18 +70,8 @@
 	align-items: center;
 	justify-content: flex-end;
 	cursor: pointer;
-}
 
-@media (max-width: 500px) {
-	.options {
-		top: unset;
-		right: 0;
-		bottom: 110%;
-		padding: unset;
-		box-shadow: none;
-	}
-
-	.option {
+	@include mixins.mobile {
 		padding: unset;
 	}
 }

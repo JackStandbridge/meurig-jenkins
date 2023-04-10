@@ -21,3 +21,9 @@
 		@include outer-focus-state;
 	}
 }
+
+@mixin mobile {
+	@media (max-width: 500px) {
+		@content
+	}
+}

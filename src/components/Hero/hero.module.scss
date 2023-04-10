@@ -1,3 +1,5 @@
+@use '@/styles/mixins';
+
 .hero {
 	display: flex;
 	flex-direction: column;
@@ -17,6 +19,10 @@
 
 	letter-spacing: 5px;
 	font-family: Bogart, sans-serif;
+
+	@include mixins.mobile {
+		font-size: 3rem;
+	}
 }
 
 
@@ -27,14 +33,8 @@
 	font-variant-caps: all-small-caps;
 	letter-spacing: 3px;
 	text-align: center;
-}
 
-@media (max-width: 500px) {
-	.title {
-		font-size: 3rem;
-	}
-
-	.subtitle {
+	@include mixins.mobile {
 		font-size: 1.5rem;
 	}
 }

@@ -1,5 +1,14 @@
 import { Projects } from "@/components/Pages/Projects";
+import { content } from "@/content/projects";
 
-const ProjectsPage = () => <Projects />;
+const ProjectsPage = () => (
+  <Projects
+    projects={Object.fromEntries(
+      Object.entries(content.projects).filter(
+        ([_, { type }]) => type === "commercial"
+      )
+    )}
+  />
+);
 
 export default ProjectsPage;

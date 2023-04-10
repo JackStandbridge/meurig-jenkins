@@ -1,11 +1,11 @@
 import { Language } from "@/types/language";
-import { Projects } from "@/types/messages";
+import { ProjectList } from "@/types/messages";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./cards.module.scss";
 
 export type CardsProps = {
-  items: Projects;
+  items: ProjectList;
   language: Language;
 };
 

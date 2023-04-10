@@ -1,3 +1,5 @@
+@use '@/styles/mixins';
+
 .header {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -16,10 +18,35 @@
 	gap: 1rem;
 
 	justify-content: space-between;
+
+	@include mixins.mobile {
+		.toggled & {
+			background: var(--background);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			padding: 2rem;
+
+			flex-direction: column;
+		}
+
+		.hidden & {
+			display: none;
+		}
+	}
 }
 
 .mobileToggle {
+	@include mixins.outer-focus;
 	display: none;
+
+	@include mixins.mobile {
+		display: block;
+	}
+
 	position: absolute;
 	right: 0;
 
@@ -33,64 +60,37 @@
 	color: inherit;
 
 	z-index: 1;
-}
 
-.mobileToggle::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 80%;
-	height: 2px;
-	color: inherit;
-	background: currentColor;
 
-	transform: translateY(-0.5rem);
-	transition: 0.2s;
-}
-
-.toggled .mobileToggle::before {
-	width: 80%;
-	transform: rotate(-45deg);
-	transform-origin: center;
-}
-
-.mobileToggle::after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 40%;
-	height: 2px;
-	background: currentColor;
-
-	transform: translateY(0.5rem);
-	transition: 0.2s;
-}
-
-.toggled .mobileToggle::after {
-	width: 80%;
-	transform: rotate(45deg);
-	transform-origin: center;
-}
-
-@media (max-width: 500px) {
-	.mobileToggle {
+	&::before, &::after {
+		content: "";
 		display: block;
+		position: absolute;
+		left: 50%;
+
+		background: currentColor;
+		height: 2px;
+		transition: 0.2s;
+		transform-origin: center;
 	}
 
-	.toggled .content {
-		background: var(--background);
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
+	&::before {
+		width: 80%;
+		transform: translateX(-50%) translateY(-0.5rem);
 
-		padding: 2rem;
-
-		flex-direction: column;
+		.toggled & {
+			width: 80%;
+			transform: translateX(-50%) rotate(-45deg);
+		}
 	}
 
-	.hidden .content {
-		display: none;
+	&::after {
+		width: 40%;
+		transform: translateX(-100%) translateY(0.5rem);
+
+		.toggled & {
+			width: 80%;
+			transform: translateX(-50%) rotate(45deg);
+		}
 	}
 }

@@ -8,6 +8,11 @@
 	display: flex;
 
 	justify-content: space-between;
+
+	@include mixins.mobile {
+		flex-direction: column;
+		gap: 2rem;
+	}
 }
 
 .nav {
@@ -23,6 +28,7 @@
 
 	align-items: center;
 	justify-content: center;
+
 }
 
 .link {
@@ -40,6 +46,10 @@
 .info {
 	margin-left: auto;
 	font-size: 1rem;
+
+	@include mixins.mobile {
+		margin: auto;
+	}
 }
 
 .invert {

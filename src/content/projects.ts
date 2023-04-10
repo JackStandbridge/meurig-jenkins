@@ -9,6 +9,7 @@ export const content: ProjectsPage = {
   },
   projects: {
     martini: {
+      type: "commercial",
       id: "martini",
       videoId: "lfQwtzRUTaU",
       poster: "/images/martini-poster.jpeg",
@@ -39,6 +40,7 @@ export const content: ProjectsPage = {
     },
     experience: {
       id: "experience",
+      type: "commercial",
       videoId: "_vh74nXvjUM",
       poster: "/images/experience-poster.jpeg",
       messages: {
@@ -74,6 +76,7 @@ export const content: ProjectsPage = {
     },
     apparel: {
       id: "apparel",
+      type: "commercial",
       videoId: "G8Kc00cs1-I",
       poster: "/images/apparel-poster.jpeg",
       messages: {
@@ -99,6 +102,7 @@ export const content: ProjectsPage = {
     },
     luna: {
       id: "luna",
+      type: "personal",
       videoId: "91y4xWETJtY",
       poster: "/images/luna-poster.jpeg",
       messages: {
@@ -126,6 +130,7 @@ export const content: ProjectsPage = {
     },
     brummie: {
       id: "brummie",
+      type: "personal",
       videoId: "Z8hU7of8Z5I",
       poster: "/images/brummie-poster.jpeg",
       messages: {

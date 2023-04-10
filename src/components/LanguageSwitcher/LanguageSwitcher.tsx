@@ -118,7 +118,7 @@ export const LanguageSwitcher = ({
         {languages.map((lang) => (
           <Fragment key={lang}>
             <input
-              className={"screenReader"}
+              className="screenReader"
               type="radio"
               checked={language === lang}
               name="language"

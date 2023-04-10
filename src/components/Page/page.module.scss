@@ -1,3 +1,5 @@
+@use '@/styles/mixins';
+
 .container {
 	max-width: 1000px;
 	width: 100%;
@@ -6,18 +8,17 @@
 	padding-left: 50px;
 	padding-right: 50px;
 
+	@include mixins.mobile {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	position: relative;
 
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
 
-@media (max-width: 500px) {
-	.container {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
 }
 
 .divider {
