@@ -6,13 +6,13 @@ export const content: HomePage = {
       firstLine: "Meurig Jenkins",
       secondLine: "ydw i",
     },
-    subtitle: "Gwneuthurwr Ffilm Llawrydd",
+    subtitle: "Cyfarwyddwr Ffilm, Actor a Chyfansoddwr",
   },
   English: {
     title: {
       firstLine: "I am",
       secondLine: "Meurig Jenkins",
     },
-    subtitle: "Freelance Filmmaker",
+    subtitle: "Freelance Actor, Filmmaker and Composer",
   },
 };
