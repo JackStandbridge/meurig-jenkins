@@ -28,6 +28,11 @@ export const content: ProjectsPage = {
         English: {
           title: "Hydeout Espresso Martini Advert",
           description: `
+            A stylish cocktail tutorial, filmed on a whim one night to test out the Blackmagic Pocket Cinema Camera 6k and Zhiyun Weebill 2 gimbal, shot with rotoscoping in mind.
+            <b><u>Equipment</u></b>
+            Blackmagic Pocket Cinema Camera 6k
+            Zhiyun Weebill 2 gimbal
+            <b><u>Credits</u></b>
             Directed by Meurig Jenkins
             Assistant Director: Hannah Ashworth
             Camera: Griff Edwards
