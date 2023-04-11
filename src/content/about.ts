@@ -6,7 +6,7 @@ export const content: AboutPage = {
     blurb:
       "Cyfarwyddwr ffilm o Aberystwyth, nawr yn byw yn Ynys Môn, Gogledd Cymru. Rwy'n gwneud ffilmiau sy'n cymryd ei chiwiau o ysbrydoliaethau sy'n agos ac ymhell o'r gartref, gan gloddio'n ddwfn am y rhyfeddodau mewn normalrwydd."
     
-    "Rwy'n dilyn gyrfa yn y diwydiant ffilm fel actor, awdur a chyfarwyddwr, yn edrych i fireinio fy steil, a gwella fy hun gyda chymaint o gyfleoedd â phosib.  Cysylltwch os oes gennych ddiddordeb mewn cydweithio, neu os oes gennych unrhyw gyfleoedd i fod yn rhan o'ch prosiect!",
+    " Rwy'n dilyn gyrfa yn y diwydiant ffilm fel actor, awdur a chyfarwyddwr, yn edrych i fireinio fy steil, a gwella fy hun gyda chymaint o gyfleoedd â phosib.  Cysylltwch os oes gennych ddiddordeb mewn cydweithio, neu os oes gennych unrhyw gyfleoedd i fod yn rhan o'ch prosiect!",
   },
   English: {
     title: "About me",
