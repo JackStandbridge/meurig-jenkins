@@ -69,7 +69,7 @@ export const content: ProjectsPage = {
         English: {
           title: 'The Hydeout "Experience" 2022 Advert',
           description: `
-            An advert for a restaurant in Menai Bridge.  Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more precise shots.  I wrote the music to fit rhymically with the edit.
+            An advert for a restaurant in Menai Bridge.  Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more precise shots.  I wrote the music to fit rhymically with the edit, and I animated the logo to give the advert extra flair.
 
             <b><u>Equipment</u></b>
             Blackmagic Pocket Cinema Camera 6k
