@@ -33,12 +33,14 @@ export const content: ProjectsPage = {
             <b><u>Equipment</u></b>
             Blackmagic Pocket Cinema Camera 6k
             Zhiyun Weebill 2 gimbal
+            DaVinci Resolve Studio
 
             <b><u>Credits</u></b>
             Directed by Meurig Jenkins
             Assistant Director: Hannah Ashworth
             Camera: Griff Edwards
             Camera Assistant: Noel Davies
+            Editor: Meurig Jenkins
             Music: King Walk by Dollshade
           `,
         },
@@ -69,16 +71,17 @@ export const content: ProjectsPage = {
           description: `
             An advert for a restaurant in Menai Bridge.  Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more precise shots.  I wrote the music to fit rhymically with the edit.
 
-             <b><u>Equipment</u></b>
+            <b><u>Equipment</u></b>
             Blackmagic Pocket Cinema Camera 6k
             Zhiyun Weebill 2 gimbal
+            DaVinci Resolve Studio
 
             <b><u>Credits</u></b>
             Directed by Meurig Jenkins
-            Cinematography by Griff Edwards
-            Assistant Cinematography by Trevor Gardner
-            Editing by Meurig Jenkins and Griff Edwards
-            Music by Meurig Jenkins
+            Cinematography: Griff Edwards
+            Assistant Cinematography: Trevor Gardner
+            Editors: Meurig Jenkins and Griff Edwards
+            Music: At the Hydeout by Meurig Jenkins
 
             Cast: Neol Davies, Owain Sion, Hannah Ashworth, Meurig Jenkins, Trevor Gardner, Taya Bithell, Leo Drayton, Meg Maycock, Dan Froud, Matthew Mackenzie Southgate, Erin Davies, Holly Hughes, Lois Jones, Eban Jones, Ieuan Grenier, Sam Clark, Owen Thomas, Noa Williams, Megan Rogers-Jones
           `,
@@ -103,10 +106,18 @@ export const content: ProjectsPage = {
         English: {
           title: "Three.Nine.Twelve - Hysbyseb Forgotten Sons Apparel",
           description: `
-            Music by A Few Too Many
+            An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel.  Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
+            
+            <b><u>Equipment</u></b>
+            Blackmagic Pocket Cinema Camera 6k
+            Zhiyun Weebill 2 gimbal
+            DaVinci Resolve Studio
 
-            Models: Jonathan Lee Haynes, Anthony Salisbury, Tyler Stephens
+            <b><u>Credits</u></b>
             Director/Cameraman/Editor: Meurig Jenkins
+            Music: Someday by A Few Too Many
+            
+            Models: Jonathan Lee Haynes, Anthony Salisbury, Tyler Stephens
           `,
         },
       },
@@ -130,11 +141,18 @@ export const content: ProjectsPage = {
         English: {
           title: "Luna's Chill Day In",
           description: `
-            Even on a chill day, it's important to hunt for food.
+            Even on a chill day, it's important to hunt for food.  First film I made at the end of 2021 after I got the camera and gimbal, filmed to get to grips with the equipment and editing software.
 
-            Special thanks to Matt and Luna for letting me pester them with the camera!
+            <b><u>Equipment</u></b>
+            Blackmagic Pocket Cinema Camera 6k
+            Zhiyun Weebill 2 gimbal
+            DaVinci Resolve Studio
 
-            "Luna's Chill Day In" music written by Meurig Jenkins.
+            <b><u>Credits</u></b>
+            Director/Cameraman/Editor: Meurig Jenkins
+            Music: Luna's Chill Day In by Meurig Jenkins
+
+            Cast: Matt Kings, Luna.
           `,
         },
       },
@@ -156,9 +174,17 @@ export const content: ProjectsPage = {
         English: {
           title: "The Good The Bad and the Brummie",
           description: `
-            Look at how calm he is.
+            Look at how calm he is.  A very short video to practice creating visual effects, such as blood spray, gun fire and gun flashes.
 
-            Directed by Meurig Jenkins.
+            <b><u>Equipment</u></b>
+            Blackmagic Pocket Cinema Camera 6k
+            Kenro Twin Tube Video Tripod
+            DaVinci Resolve Studio
+
+            <b><u>Credits</u></b>
+            Director/Editor: Meurig Jenkins.
+
+            Cast: Meurig Jenkins, Matt Kings.
           `,
         },
       },
