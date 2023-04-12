@@ -9,6 +9,6 @@ export const content: AboutPage = {
   English: {
     title: "About me",
     blurb:
-      "Filmmaker from Aberystwyth, now living in Anglesey, North Wales. I make films that takes its cues from inspirations close and far from home, digging deep for the oddities in normality.  I'm pursuing a career in the film industry as an actor, writer and director, looking to refine my style, and better myself with as many opportunities as possible. Please get in touch if you are interested in collaborating, or have any opportunities to be a part of your project!",
+      "Filmmaker from Aberystwyth, now living in Anglesey, North Wales. I make films that takes its cues from inspirations close and far from home, digging deep for the oddities in normality.  I'm pursuing a career in the film industry as an actor, writer and director, looking to refine my style, and better myself with as many opportunities as possible. Please <a href=mailto:meurigjenkinscyd@gmail.com>get in touch</a> if you are interested in collaborating, or have any opportunities to be a part of your project!",
   },
 };
