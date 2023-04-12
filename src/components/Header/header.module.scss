@@ -61,36 +61,35 @@
 
 	z-index: 1;
 
+}
 
-	&::before, &::after {
-		content: "";
-		display: block;
-		position: absolute;
-		left: 50%;
+.mobileToggleTop, .mobileToggleBottom {
+	display: block;
+	position: absolute;
+	left: 50%;
 
-		background: currentColor;
-		height: 2px;
-		transition: 0.2s;
-		transform-origin: center;
-	}
+	background: currentColor;
+	height: 2px;
+	transition: 0.2s;
+	transform-origin: center;
+}
 
-	&::before {
+.mobileToggleTop {
+	width: 80%;
+	transform: translateX(-1.25rem) translateY(-0.5rem) rotate(0deg);
+
+	.toggled & {
 		width: 80%;
-		transform: translateX(-50%) translateY(-0.5rem);
-
-		.toggled & {
-			width: 80%;
-			transform: translateX(-50%) rotate(-45deg);
-		}
+		transform: translateX(-1.25rem) rotate(-45deg);
 	}
+}
 
-	&::after {
-		width: 40%;
-		transform: translateX(-100%) translateY(0.5rem);
+.mobileToggleBottom {
+	width: 40%;
+	transform: translateX(-1.25rem) translateY(0.5rem) rotate(0deg);
 
-		.toggled & {
-			width: 80%;
-			transform: translateX(-50%) rotate(45deg);
-		}
+	.toggled & {
+		width: 80%;
+		transform: translateX(-1.25rem) rotate(45deg);
 	}
 }

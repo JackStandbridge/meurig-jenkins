@@ -20,6 +20,8 @@ export const Header = ({}: HeaderProps): JSX.Element => {
     >
       <button onClick={handleClick} className={styles.mobileToggle}>
         <span className="screenReader">Toggle navigation</span>
+        <span className={styles.mobileToggleTop} />
+        <span className={styles.mobileToggleBottom} />
       </button>
       <div className={styles.content}>
         <Nav />
