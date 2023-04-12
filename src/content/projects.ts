@@ -67,8 +67,13 @@ export const content: ProjectsPage = {
         English: {
           title: 'The Hydeout "Experience" 2022 Advert',
           description: `
-            Hydeout Southern Bar-B-Q & Smokehouse Restaurant in Menai Bridge, Anglesey!
+            An advert for a restaurant in Menai Bridge.  Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more precise shots.  I wrote the music to fit rhymically with the edit.
 
+             <b><u>Equipment</u></b>
+            Blackmagic Pocket Cinema Camera 6k
+            Zhiyun Weebill 2 gimbal
+
+            <b><u>Credits</u></b>
             Directed by Meurig Jenkins
             Cinematography by Griff Edwards
             Assistant Cinematography by Trevor Gardner
