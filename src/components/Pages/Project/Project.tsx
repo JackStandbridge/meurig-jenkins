@@ -3,6 +3,7 @@ import { content } from "@/content/projects";
 
 import styles from "./project.module.scss";
 import { Page } from "@/components/Page";
+import { Content } from "@/components/Content";
 
 export type ProjectProps = {
   language: Language;
@@ -23,17 +24,7 @@ export const Project = ({ language, id }: ProjectProps): JSX.Element => {
         allowFullScreen
       />
 
-      {messages.description
-        .trim()
-        .split(/\n\n/)
-        .map((paragraph, i) => (
-          <p
-            key={i}
-            dangerouslySetInnerHTML={{
-              __html: paragraph.replace(/\n/g, "<br />"),
-            }}
-          />
-        ))}
+      <Content>{messages.description}</Content>
     </Page>
   );
 };

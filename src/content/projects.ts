@@ -107,7 +107,7 @@ export const content: ProjectsPage = {
           title: "Three.Nine.Twelve - Hysbyseb Forgotten Sons Apparel",
           description: `
             An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel.  Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
-            
+
             <b><u>Equipment</u></b>
             Blackmagic Pocket Cinema Camera 6k
             Zhiyun Weebill 2 gimbal
@@ -116,7 +116,7 @@ export const content: ProjectsPage = {
             <b><u>Credits</u></b>
             Director/Cameraman/Editor: Meurig Jenkins
             Music: Someday by A Few Too Many
-            
+
             Models: Jonathan Lee Haynes, Anthony Salisbury, Tyler Stephens
           `,
         },

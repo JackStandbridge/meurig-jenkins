@@ -1,9 +1,15 @@
+@use '@/styles/mixins';
+
 .title {
 	font-size: 4rem;
 	letter-spacing: 5px;
 	font-feature-settings: "lnum";
 
 	font-family: Bogart, sans-serif;
+
+	@include mixins.mobile {
+		font-size: 3rem;
+	}
 }
 
 .iframe {

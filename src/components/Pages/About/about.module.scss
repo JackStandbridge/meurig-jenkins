@@ -1,6 +1,12 @@
+@use '@/styles/mixins';
+
 .title {
 	font-size: 4rem;
 	letter-spacing: 5px;
 
 	font-family: Bogart, sans-serif;
+
+	@include mixins.mobile {
+		font-size: 3rem;
+	}
 }
