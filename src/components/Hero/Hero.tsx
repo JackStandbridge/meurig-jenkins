@@ -9,30 +9,42 @@ export type HeroProps = {
 
 export const Hero = ({ language }: HeroProps): JSX.Element => (
   <section className={styles.hero}>
-    <h1 className={styles.title}>
-      {content[language].title.firstLine.split(" ").map((word, i) => (
-        <Fragment key={i}>
-          <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
-            {word[0]}
-          </span>
+    <div className={styles.videoWrapper}>
+      <video
+        src="/videos/banner.mp4"
+        autoPlay
+        muted
+        loop
+        className={styles.video}
+      />
+    </div>
 
-          <span>{word.slice(1)} </span>
-        </Fragment>
-      ))}
+    <div className={styles.content}>
+      <h1 className={styles.title}>
+        {content[language].title.firstLine.split(" ").map((word, i) => (
+          <Fragment key={i}>
+            <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
+              {word[0]}
+            </span>
 
-      <hr className={styles.hr} />
+            <span>{word.slice(1)} </span>
+          </Fragment>
+        ))}
 
-      {content[language].title.secondLine.split(" ").map((word, i) => (
-        <Fragment key={i}>
-          <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
-            {word[0]}
-          </span>
+        <hr className={styles.hr} />
 
-          <span>{word.slice(1)} </span>
-        </Fragment>
-      ))}
-    </h1>
+        {content[language].title.secondLine.split(" ").map((word, i) => (
+          <Fragment key={i}>
+            <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
+              {word[0]}
+            </span>
 
-    <p className={styles.subtitle}>{content[language].subtitle}</p>
+            <span>{word.slice(1)} </span>
+          </Fragment>
+        ))}
+      </h1>
+
+      <p className={styles.subtitle}>{content[language].subtitle}</p>
+    </div>
   </section>
 );

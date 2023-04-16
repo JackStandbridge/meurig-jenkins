@@ -29,7 +29,11 @@
 
 .link {
 	@include mixins.outer-focus;
-
 	color: inherit;
+
+	&:hover {
+		color: var(--text-secondary)
+	}
+
 	text-decoration: none;
 }

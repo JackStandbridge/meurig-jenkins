@@ -41,6 +41,12 @@
 
 	height: 40px;
 	width: 40px;
+
+	fill: currentColor;
+
+	svg:hover {
+		fill: var(--text-secondary);
+	}
 }
 
 .info {

@@ -71,6 +71,10 @@
 	justify-content: flex-end;
 	cursor: pointer;
 
+	&:hover {
+		color: var(--text-secondary);
+	}
+
 	@include mixins.mobile {
 		padding: unset;
 	}

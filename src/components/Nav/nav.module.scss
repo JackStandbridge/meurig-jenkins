@@ -35,7 +35,7 @@
 	justify-content: space-between;
 	width: 100%;
 
-	white-space: nowrap
+	white-space: nowrap;
 }
 
 .link {
@@ -52,6 +52,11 @@
 	text-decoration: none;
 	color: inherit;
 	letter-spacing: 2px;
+
+
+	&:hover {
+		color: var(--text-secondary);
+	}
 
 	@include mixins.mobile {
 		font-size: 1.3rem;

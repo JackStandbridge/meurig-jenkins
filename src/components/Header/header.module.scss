@@ -7,10 +7,30 @@
 	z-index: 1;
 	position: sticky;
 	top: 0;
-	width: 100%;
 	background: var(--background);
 
 	min-height: 72px;
+
+	&::before, &::after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: calc((100vw - 100%) / 2);
+
+		background: var(--background);
+
+		z-index: -1;
+	}
+
+	&::before {
+		right: 100%;
+	}
+
+	&::after {
+		left: 100%;
+	}
 }
 
 .content {

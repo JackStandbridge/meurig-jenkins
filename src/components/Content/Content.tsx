@@ -1,19 +1,17 @@
+import { marked } from "marked";
+
 export type ContentProps = {
   children: string;
 };
 
-export const Content = ({ children }: ContentProps) => (
-  <>
-    {children
-      .trim()
-      .split(/\n\n/)
-      .map((paragraph, i) => (
-        <p
-          key={i}
-          dangerouslySetInnerHTML={{
-            __html: paragraph.replace(/\n/g, "<br />"),
-          }}
-        />
-      ))}
-  </>
-);
+export const Content = ({ children }: ContentProps) => {
+  const content = children.replace(/^ +/gm, "");
+
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: marked(content, { breaks: true }),
+      }}
+    />
+  );
+};

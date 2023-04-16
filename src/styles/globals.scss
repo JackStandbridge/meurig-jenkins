@@ -1,6 +1,7 @@
 :root {
   --text-primary: rgb(24, 25, 27);
-  --text-secondary: rgb(153, 113, 93);
+  --text-secondary: rgb(151, 41, 204);
+  --text-tertiary: rgb(141, 99, 79);
   --background: rgb(248, 247, 244);
   --light-focus: rgb(255, 221, 0);
   --dark-focus: rgb(0, 0, 0);
@@ -9,12 +10,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text-primary: rgb(255, 255, 255);
-    --text-secondary: rgb(153, 113, 93);
+    --text-secondary: rgb(170, 107, 201);
+    --text-tertiary: rgb(173, 136, 117);
     --background: rgb(24, 25, 27);
   }
 }
 
-* {
+*[class] {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -36,21 +38,30 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 1em;
-  margin-bottom: 1em;
+*:not([class]) {
+
+  &:is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &:is(h2) {
+    font-size: 1.6rem;
+  }
+
+  &:is(p, li) {
+    font-size: 1.3rem;
+  }
+
+  &:is(ul) {
+    padding-left: 1.2rem;
+  }
+
+  &:is(a) {
+    color: var(--text-tertiary)
+  }
 }
 
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1.3rem;
-}
 
 @font-face {
   font-family: Bogart;

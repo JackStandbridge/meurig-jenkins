@@ -20,7 +20,7 @@ export type HomePage = Messages<{
     secondLine: string;
   };
   subtitle: string;
-}>;
+}> & { videoBannerId: string };
 
 export type AboutPage = Messages<{
   title: string;

@@ -30,12 +30,12 @@ export const content: ProjectsPage = {
           description: `
             A stylish cocktail tutorial, filmed on a whim one night to test out the Blackmagic Pocket Cinema Camera 6k and Zhiyun Weebill 2 gimbal, shot with rotoscoping in mind.
 
-            <b><u>Equipment</u></b>
-            Blackmagic Pocket Cinema Camera 6k
-            Zhiyun Weebill 2 gimbal
-            DaVinci Resolve Studio
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
 
-            <b><u>Credits</u></b>
+            ## Credits
             Directed by Meurig Jenkins
             Assistant Director: Hannah Ashworth
             Camera: Griff Edwards
@@ -69,14 +69,14 @@ export const content: ProjectsPage = {
         English: {
           title: 'The Hydeout "Experience" 2022 Advert',
           description: `
-            An advert for a restaurant in Menai Bridge.  Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more specialised shots.  I wrote the music to fit rhymically with the edit, and I animated the logo to give the advert extra flair.
+            An advert for a restaurant in Menai Bridge. Actors from the local school and university helped as extras, rearranging furniture and using what was to hand to create more specialised shots.  I wrote the music to fit rhymically with the edit, and I animated the logo to give the advert extra flair.
 
-            <b><u>Equipment</u></b>
-            Blackmagic Pocket Cinema Camera 6k
-            Zhiyun Weebill 2 gimbal
-            DaVinci Resolve Studio
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
 
-            <b><u>Credits</u></b>
+            ## Credits
             Directed by Meurig Jenkins
             Cinematography: Griff Edwards
             Assistant Cinematography: Trevor Gardner
@@ -106,14 +106,14 @@ export const content: ProjectsPage = {
         English: {
           title: "Three.Nine.Twelve - Hysbyseb Forgotten Sons Apparel",
           description: `
-            An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel.  Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
+            An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel. Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
 
-            <b><u>Equipment</u></b>
-            Blackmagic Pocket Cinema Camera 6k
-            Zhiyun Weebill 2 gimbal
-            DaVinci Resolve Studio
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
 
-            <b><u>Credits</u></b>
+            ## Credits
             Director/Cameraman/Editor: Meurig Jenkins
             Music: Someday by A Few Too Many
 
@@ -143,12 +143,12 @@ export const content: ProjectsPage = {
           description: `
             Even on a chill day, it's important to hunt for food.  First film I made at the end of 2021 after I got the camera and gimbal, filmed to get to grips with the equipment and editing software.
 
-            <b><u>Equipment</u></b>
-            Blackmagic Pocket Cinema Camera 6k
-            Zhiyun Weebill 2 gimbal
-            DaVinci Resolve Studio
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
 
-            <b><u>Credits</u></b>
+            ## Credits
             Director/Cameraman/Editor: Meurig Jenkins
             Music: Luna's Chill Day In by Meurig Jenkins
 
@@ -176,14 +176,13 @@ export const content: ProjectsPage = {
           description: `
             Look at how calm he is.  A very short video to practice creating visual effects, such as blood spray, gun fire and gun flashes.
 
-            <b><u>Equipment</u></b>
-            Blackmagic Pocket Cinema Camera 6k
-            Kenro Twin Tube Video Tripod
-            DaVinci Resolve Studio
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Kenro Twin Tube Video Tripod
+            - DaVinci Resolve Studio
 
-            <b><u>Credits</u></b>
+            ## Credits
             Director/Editor: Meurig Jenkins.
-
             Cast: Meurig Jenkins, Matt Kings.
           `,
         },

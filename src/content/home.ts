@@ -15,4 +15,6 @@ export const content: HomePage = {
     },
     subtitle: "Freelance Actor, Filmmaker and Composer",
   },
+
+  videoBannerId: "w6AMO2jHTOg",
 };
