@@ -12,7 +12,7 @@ export const content: AboutPage = {
   English: {
     title: "About me",
     blurb: `
-      Filmmaker from Aberystwyth, now living in Anglesey, North Wales. I make films that takes its cues from inspirations close and far from home, digging deep for the oddities in normality.
+      Filmmaker from Aberystwyth, now living in Anglesey, North Wales. I make films that takes its cues from inspirations close and far from home, looking to dig deep for the oddities in normality.
 
       I grew up in the theatre, performing in plays (The Goalkeeper's Revenge; The Roses of Eyam; Twelfth Night), musicals (Bugsy Malone; The Sorcerer's Apprentice; Anything Goes) and in many Aberystwyth Summer Season musicals (The King and I; The Sound of Music; Peter Pan).  
       
