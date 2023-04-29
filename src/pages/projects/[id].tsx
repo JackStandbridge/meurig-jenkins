@@ -2,7 +2,7 @@ import { Project } from "@/components/Pages/Project";
 import { useRouter } from "next/router";
 import { content } from "@/content/projects";
 
-const ProjectsPage = () => {
+const ProjectPage = () => {
   const router = useRouter();
 
   const { id } = router.query;
@@ -18,4 +18,4 @@ const ProjectsPage = () => {
   router.push("/projects");
 };
 
-export default ProjectsPage;
+export default ProjectPage;

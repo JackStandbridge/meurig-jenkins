@@ -49,3 +49,16 @@ export type ProjectList = Record<string, Project>;
 export type ProjectsPage = Messages<{
   title: string;
 }> & { projects: ProjectList };
+
+export type Shortfilm = {
+  id: string;
+  videoId: string;
+  poster: string;
+  messages: Messages<{ title: string; description: string }>;
+};
+
+export type ShortfilmList = Record<string, Shortfilm>;
+
+export type ShortfilmsPage = Messages<{ title: string }> & {
+  shortfilms: ShortfilmList;
+};

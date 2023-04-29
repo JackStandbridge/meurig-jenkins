@@ -1,18 +1,23 @@
 import { Language } from "@/types/language";
-import { ProjectList } from "@/types/messages";
+import { ProjectList, ShortfilmList } from "@/types/messages";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./cards.module.scss";
 
 export type CardsProps = {
-  items: ProjectList;
+  items: ProjectList | ShortfilmList;
   language: Language;
+  section: string;
 };
 
-export const Cards = ({ items, language }: CardsProps): JSX.Element => (
+export const Cards = ({
+  items,
+  language,
+  section,
+}: CardsProps): JSX.Element => (
   <section className={styles.grid}>
     {Object.values(items).map(({ messages, poster, id }, i) => (
-      <Link className={styles.link} key={i} href={`/projects/${id}`}>
+      <Link className={styles.link} key={i} href={`/${section}/${id}`}>
         <article>
           <picture className={styles.picture}>
             <Image
