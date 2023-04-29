@@ -5,9 +5,18 @@ type Messages<T> = Record<Language, T>;
 export type Nav = Messages<{
   home: string;
   about: string;
-  projects: string;
-  personal: string;
-  commercial: string;
+  company: string;
+  shortfilms: {
+    name: string;
+    items: { stanza: string; trosech: string; vultures: string };
+  };
+  projects: {
+    name: string;
+    items: {
+      personal: string;
+      commercial: string;
+    };
+  };
 }>;
 
 export type LanguageSwitcher = Messages<{

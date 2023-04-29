@@ -1,13 +1,13 @@
 @use '@/styles/mixins';
 
 .header {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-
 	z-index: 1;
 	position: sticky;
 	top: 0;
 	background: var(--background);
+
+	display: flex;
+	align-items: center;
 
 	min-height: 72px;
 
@@ -37,6 +37,8 @@
 	display: flex;
 	gap: 1rem;
 
+	width: 100%;
+
 	justify-content: space-between;
 
 	@include mixins.mobile {
@@ -51,11 +53,29 @@
 			padding: 2rem;
 
 			flex-direction: column;
+
+			overflow: scroll;
 		}
 
 		.hidden & {
 			display: none;
 		}
+	}
+}
+
+.mobileToggleContainer {
+	@include mixins.mobile {
+		background: var(--background);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding-top: 1rem;
+
+		z-index: 1;
+
+		display: flex;
+		justify-content: end;
 	}
 }
 
@@ -67,8 +87,8 @@
 		display: block;
 	}
 
-	position: absolute;
-	right: 0;
+	position: relative;
+	scroll-margin: 0;
 
 	width: 3rem;
 	height: 3rem;

@@ -77,7 +77,7 @@ export const LanguageSwitcher = ({
   };
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    const value = event.currentTarget.value;
+    const { value } = event.currentTarget;
 
     if (isLanguage(value)) {
       updateLanguage(value);

@@ -18,11 +18,14 @@ export const Header = ({}: HeaderProps): JSX.Element => {
         styles.header + " " + (toggled ? styles.toggled : styles.hidden)
       }
     >
-      <button onClick={handleClick} className={styles.mobileToggle}>
-        <span className="screenReader">Toggle navigation</span>
-        <span className={styles.mobileToggleTop} />
-        <span className={styles.mobileToggleBottom} />
-      </button>
+      <div className={styles.mobileToggleContainer}>
+        <button onClick={handleClick} className={styles.mobileToggle}>
+          <span className="screenReader">Toggle navigation</span>
+          <span className={styles.mobileToggleTop} />
+          <span className={styles.mobileToggleBottom} />
+        </button>
+      </div>
+
       <div className={styles.content}>
         <Nav />
         <LanguageSwitcher />

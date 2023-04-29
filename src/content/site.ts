@@ -5,16 +5,42 @@ export const content: { nav: Nav; languageSwitcher: LanguageSwitcher } = {
     Welsh: {
       home: "hafan",
       about: "amdanaf i",
-      projects: "prosiectau",
-      personal: "personol",
-      commercial: "masnachol",
+      company: "Ffilmiau PenDraig",
+      shortfilms: {
+        name: "ffilmiau fer",
+        items: {
+          stanza: "The Stanza Principle",
+          trosech: "Trosech",
+          vultures: "Glass Vultures",
+        },
+      },
+      projects: {
+        name: "prosiectau",
+        items: {
+          personal: "personol",
+          commercial: "masnachol",
+        },
+      },
     },
     English: {
       home: "home",
       about: "about",
-      projects: "projects",
-      personal: "personal",
-      commercial: "commercial",
+      company: "PenDraig Films",
+      shortfilms: {
+        name: "short films",
+        items: {
+          stanza: "The Stanza Principle",
+          trosech: "Trosech",
+          vultures: "Glass Vultures",
+        },
+      },
+      projects: {
+        name: "projects",
+        items: {
+          personal: "personal",
+          commercial: "commercial",
+        },
+      },
     },
   },
   languageSwitcher: {
