@@ -607,6 +607,24 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+embla-carousel-react@^8.0.0-rc02:
+  version "8.0.0-rc02"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.0.0-rc02.tgz#fe6804337e218ae21a76fef100070d5c89363f2a"
+  integrity sha512-ONcbfeM23FE6TUNEJcpPbLTha/EQdLfnMibgXXtYXYyXAHJ4WsjRsLL4WAP6pLGU/uXjr5ZJ5I/39T9YUzUaQA==
+  dependencies:
+    embla-carousel "8.0.0-rc02"
+    embla-carousel-reactive-utils "8.0.0-rc02"
+
+embla-carousel-reactive-utils@8.0.0-rc02:
+  version "8.0.0-rc02"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc02.tgz#f2bb4d4beb049ddd6bdecaa1bb9c74cb1e1d18b8"
+  integrity sha512-26ZXUnSiD6eN7rwylPnDYeIM3xNlPd92Wr9PMFou9qlIJSydEA4o3IqScXdiS+3slnlo/hiR81VrmTNjgeGv+Q==
+
+embla-carousel@8.0.0-rc02:
+  version "8.0.0-rc02"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc02.tgz#74e9f7e5d2bfe20e013285a50ae165530ce8b436"
+  integrity sha512-ZD8zkPQqp56qOhNjdT2MmzeJmPMaCwOQW0oH/8dXWy7krIzJkCkaUMDYuD3VXAHs5729WeH4d0znLu6x9RadNg==
+
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"

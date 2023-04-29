@@ -16,12 +16,12 @@ const getItemsForDropdown = (
 ) => {
   return (
     Object.entries(content.nav[language][name].items) as [
-      keyof typeof content.nav[Language][typeof name]["items"],
-      ValueOf<typeof content.nav[Language][typeof name]["items"]>
+      keyof (typeof content.nav)[Language][typeof name]["items"],
+      ValueOf<(typeof content.nav)[Language][typeof name]["items"]>
     ][]
   ).map(
     ([route, item]): Item => ({
-      href: `/shortfilms/${route}`,
+      href: `/${name}/${route}`,
       name: item,
     })
   );

@@ -2,16 +2,62 @@ import { ShortfilmsPage } from "@/types/messages";
 
 export const content: ShortfilmsPage = {
   Welsh: {
-    title: "Prosiectau",
+    title: "Ffilmiau Fer",
   },
   English: {
-    title: "Projects",
+    title: "Short Films",
   },
   shortfilms: {
     stanza: {
       id: "stanza",
       videoId: "",
       poster: "",
+      images: [
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+      ],
       messages: {
         Welsh: {
           title: "The Stanza Principle",

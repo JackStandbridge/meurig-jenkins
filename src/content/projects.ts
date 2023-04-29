@@ -127,6 +127,52 @@ export const content: ProjectsPage = {
       type: "personal",
       videoId: "91y4xWETJtY",
       poster: "/images/luna-poster.jpeg",
+      images: [
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/luna-poster.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+      ],
       messages: {
         Welsh: {
           title: "Luna's Chill Day In",

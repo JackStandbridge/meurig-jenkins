@@ -1,6 +1,10 @@
-import type { Nav, LanguageSwitcher } from "@/types/messages";
+import type { Nav, LanguageSwitcher, Carousel } from "@/types/messages";
 
-export const content: { nav: Nav; languageSwitcher: LanguageSwitcher } = {
+export const content: {
+  nav: Nav;
+  languageSwitcher: LanguageSwitcher;
+  carousel: Carousel;
+} = {
   nav: {
     Welsh: {
       home: "hafan",
@@ -49,6 +53,16 @@ export const content: { nav: Nav; languageSwitcher: LanguageSwitcher } = {
     },
     English: {
       prompt: "Choose Language",
+    },
+  },
+  carousel: {
+    Welsh: {
+      previousSlide: "Sleid blaenorol",
+      nextSlide: "Sleid nesaf",
+    },
+    English: {
+      previousSlide: "Previous slide",
+      nextSlide: "Next slide",
     },
   },
 };

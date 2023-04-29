@@ -1,0 +1,80 @@
+@use '@/styles/mixins';
+
+.carousel {
+	overflow: hidden;
+	position: relative;
+}
+
+.track {
+	display: flex;
+}
+
+.slide {
+	flex: 0 0 100%;
+	min-width: 0;
+	aspect-ratio: 16 / 9;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: #000;
+}
+
+%button {
+	@include mixins.outer-focus;
+
+	display: block;
+	border: none;
+	opacity: 0;
+
+	.carousel:hover &, &:focus-visible {
+		opacity: 1;
+	}
+
+	background: rgba(255, 255, 255, 0.7);
+
+	height: 3rem;
+	width: 3rem;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+
+	cursor: pointer;
+
+	&::before, &::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: calc(50% - 1px);
+		height: 2px;
+		width: 30%;
+		background: black;
+	}
+
+	&::before {
+		transform: rotate(45deg) translateX(-50%);
+	}
+
+	&::after {
+		transform: rotate(-45deg) translateX(-50%);
+	}
+}
+
+.prev {
+	@extend %button;
+	left: 1rem;
+
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.next {
+	@extend %button;
+	right: 1rem;
+
+	transform: translateY(-50%);
+}
