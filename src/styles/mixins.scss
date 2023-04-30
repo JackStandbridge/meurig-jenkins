@@ -24,6 +24,17 @@
 
 @mixin mobile {
 	@media (max-width: 767px) {
-		@content
+		@content;
 	}
+}
+
+@mixin screen-reader {
+	display: block;
+	position: absolute;
+	max-height: 1px;
+	max-width: 1px;
+	clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+	opacity: 0;
+
+	scroll-margin-top: 0;
 }

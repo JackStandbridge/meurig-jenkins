@@ -24,3 +24,17 @@
 	margin-top: 5rem;
 	margin-bottom: 2rem;
 }
+
+.contentLink {
+	@include mixins.outer-focus;
+
+	z-index: 2;
+
+	padding: 1rem;
+	margin-top: 0.4rem;
+	align-self: start;
+
+	&:not(:focus-visible) {
+		@include mixins.screen-reader;
+	}
+}

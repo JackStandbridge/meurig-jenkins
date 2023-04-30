@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import styles from "./page.module.scss";
+import Link from "next/link";
 
 export type PageProps = {
   children: ReactNode;
@@ -24,9 +25,16 @@ export const Page = ({
     </Head>
 
     <div className={styles.container}>
+      <a className={styles.contentLink} href="#content">
+        Skip to content
+      </a>
+
       <Header />
-      <main>{children}</main>
+
+      <main id="content">{children}</main>
+
       <hr className={styles.divider} />
+
       <Footer />
     </div>
   </>
