@@ -2,7 +2,7 @@ import { Project } from "@/components/Pages/Project";
 import { useRouter } from "next/router";
 import { content } from "@/content/projects";
 
-const ProjectPage = () => {
+const ProjectPage = (): JSX.Element | undefined => {
   const router = useRouter();
 
   const { id } = router.query;

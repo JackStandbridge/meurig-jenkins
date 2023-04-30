@@ -1,5 +1,5 @@
 import { About } from "@/components/Pages/About";
 
-const AboutPage = () => <About />;
+const AboutPage = (): JSX.Element => <About />;
 
 export default AboutPage;

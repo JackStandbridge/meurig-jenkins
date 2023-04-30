@@ -1,10 +1,11 @@
-import { Language } from "@/types/language";
-import { content } from "@/content/shortfilms";
+import type { Language } from "@/types/language";
 
 import styles from "./shortfilm.module.scss";
 import { Page } from "@/components/Page";
 import { Content } from "@/components/Content";
 import { Carousel } from "@/components/Carousel";
+
+import { content } from "@/content/shortfilms";
 
 export type ShortfilmProps = {
   language: Language;

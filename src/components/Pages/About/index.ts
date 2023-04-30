@@ -1,6 +1,6 @@
 import type { AboutProps } from "./About";
+import type { RootState } from "@/store";
 
-import { RootState } from "@/store";
 import { connect } from "react-redux";
 import { About as Component } from "./About";
 

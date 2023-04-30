@@ -1,4 +1,4 @@
-import { ShortfilmsPage } from "@/types/messages";
+import type { ShortfilmsPage } from "@/types/messages";
 
 export const content: ShortfilmsPage = {
   Welsh: {

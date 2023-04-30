@@ -1,11 +1,9 @@
 import type { RootState } from "@/store";
+import type { LanguageSwitcherProps } from "./LanguageSwitcher";
 
 import { updateLanguage } from "@/reducers/preferences";
 import { connect } from "react-redux";
-import {
-  LanguageSwitcher as Component,
-  LanguageSwitcherProps,
-} from "./LanguageSwitcher";
+import { LanguageSwitcher as Component } from "./LanguageSwitcher";
 
 const mapStateToProps = ({
   preferences: { language },

@@ -1,8 +1,12 @@
-import { RootState } from "@/store";
+import type { RootState } from "@/store";
+import type { HeroProps } from "./Hero";
+
 import { connect } from "react-redux";
 import { Hero as Component } from "./Hero";
 
-const mapStateToProps = ({ preferences: { language } }: RootState) => ({
+const mapStateToProps = ({
+  preferences: { language },
+}: RootState): Pick<HeroProps, "language"> => ({
   language,
 });
 

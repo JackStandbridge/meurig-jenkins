@@ -1,10 +1,13 @@
-import { Language } from "@/types/language";
-import { useEffect, useState, FocusEventHandler } from "react";
+import type { Language } from "@/types/language";
+import type { FocusEventHandler } from "react";
+import type { Item } from "./Dropdown";
+import type { ValueOf } from "@/types/utils";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { content } from "@/content/site";
 import styles from "./nav.module.scss";
-import { Dropdown, Item } from "./Dropdown";
-import { ValueOf } from "@/types/utils";
+import { Dropdown } from "./Dropdown";
 
 export type NavProps = {
   language: Language;
@@ -13,7 +16,7 @@ export type NavProps = {
 const getItemsForDropdown = (
   language: Language,
   name: "shortfilms" | "projects"
-) => {
+): Item[] => {
   return (
     Object.entries(content.nav[language][name].items) as [
       keyof (typeof content.nav)[Language][typeof name]["items"],
@@ -30,19 +33,19 @@ const getItemsForDropdown = (
 export const Nav = ({ language }: NavProps): JSX.Element => {
   const [expanded, setExpanded] = useState<null | string>(null);
 
-  const handleClick = (target: string) => {
+  const handleClick = (target: string): void => {
     setExpanded((expanded) => (expanded === target ? null : target));
   };
 
   useEffect(() => {
-    const keyListener = ({ key }: KeyboardEvent) => {
+    const keyListener = ({ key }: KeyboardEvent): void => {
       if (key === "Escape") {
         setExpanded(null);
         return;
       }
     };
 
-    const clickListener = ({ target }: MouseEvent) => {
+    const clickListener = ({ target }: MouseEvent): void => {
       if (!target) {
         return;
       }
@@ -89,7 +92,7 @@ export const Nav = ({ language }: NavProps): JSX.Element => {
         <li className={styles.li} onBlur={handleBlur}>
           <Dropdown
             expanded={expanded === "shortfilms"}
-            handleClick={() => handleClick("shortfilms")}
+            handleClick={(): void => handleClick("shortfilms")}
             title={{
               name: content.nav[language].shortfilms.name,
               href: "/shortfilms",
@@ -101,13 +104,19 @@ export const Nav = ({ language }: NavProps): JSX.Element => {
         <li className={styles.li} onBlur={handleBlur}>
           <Dropdown
             expanded={expanded === "projects"}
-            handleClick={() => handleClick("projects")}
+            handleClick={(): void => handleClick("projects")}
             title={{
               name: content.nav[language].projects.name,
               href: "/projects",
             }}
             items={getItemsForDropdown(language, "projects")}
           />
+        </li>
+
+        <li className={styles.li}>
+          <Link className={styles.link} href="/pendraigfilms">
+            {content.nav[language].company}
+          </Link>
         </li>
       </ul>
     </nav>

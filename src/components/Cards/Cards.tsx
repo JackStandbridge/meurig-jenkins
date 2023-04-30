@@ -1,5 +1,6 @@
-import { Language } from "@/types/language";
-import { ContentList } from "@/types/messages";
+import type { Language } from "@/types/language";
+import type { ContentList } from "@/types/messages";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./cards.module.scss";

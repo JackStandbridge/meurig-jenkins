@@ -1,10 +1,12 @@
-import { Language } from "@/types/language";
-import { content } from "@/content/projects";
+import type { Language } from "@/types/language";
 
-import styles from "./project.module.scss";
 import { Page } from "@/components/Page";
 import { Content } from "@/components/Content";
 import { Carousel } from "@/components/Carousel";
+
+import { content } from "@/content/projects";
+
+import styles from "./project.module.scss";
 
 export type ProjectProps = {
   language: Language;

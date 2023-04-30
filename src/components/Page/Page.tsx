@@ -1,9 +1,9 @@
+import type { ReactNode } from "react";
+
 import Head from "next/head";
-import { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import styles from "./page.module.scss";
-import Link from "next/link";
 
 export type PageProps = {
   children: ReactNode;

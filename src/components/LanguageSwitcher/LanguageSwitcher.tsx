@@ -1,14 +1,11 @@
-import {
-  ChangeEventHandler,
-  Fragment,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import type { ChangeEventHandler } from "react";
+import type { Language } from "@/types/language";
+
+import { Fragment, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 import { isLanguage } from "@/guards/isLanguage";
-import { Language, languageInfo, languages } from "@/types/language";
+import { languageInfo, languages } from "@/types/language";
 import { content } from "@/content/site";
 
 import styles from "./languageSwitcher.module.scss";
@@ -27,7 +24,7 @@ export const LanguageSwitcher = ({
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const keyListener = ({ key, target }: KeyboardEvent) => {
+    const keyListener = ({ key, target }: KeyboardEvent): void => {
       if (key === "Escape") {
         setExpanded(false);
         return;
@@ -44,7 +41,7 @@ export const LanguageSwitcher = ({
       }
     };
 
-    const clickListener = ({ target }: MouseEvent) => {
+    const clickListener = ({ target }: MouseEvent): void => {
       if (!target) {
         return;
       }
@@ -67,11 +64,11 @@ export const LanguageSwitcher = ({
     };
   }, []);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setExpanded(!expanded);
   };
 
-  const handleDismiss = () => {
+  const handleDismiss = (): void => {
     setExpanded(false);
     buttonRef.current?.focus();
   };

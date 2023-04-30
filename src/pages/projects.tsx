@@ -1,7 +1,7 @@
 import { Projects } from "@/components/Pages/Projects";
 import { content } from "@/content/projects";
 
-const ProjectsPage = () => (
+const ProjectsPage = (): JSX.Element => (
   <Projects
     projects={Object.fromEntries(
       Object.entries(content.projects).filter(

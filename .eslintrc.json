@@ -1,3 +1,52 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "default-case": "off",
+    "no-console": "warn",
+    "no-undefined": "warn",
+    "no-undef-init": "warn",
+    "jsx-a11y/alt-text": "off",
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      { "prefer": "type-imports" }
+    ],
+    "@typescript-eslint/consistent-generic-constructors": "warn",
+    "@typescript-eslint/consistent-indexed-object-style": ["warn", "record"],
+    "@typescript-eslint/array-type": ["warn", { "default": "array" }],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-ignore": "allow-with-description"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "_",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "_"
+      }
+    ]
+  }
 }

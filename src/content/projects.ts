@@ -1,4 +1,4 @@
-import { ProjectsPage } from "@/types/messages";
+import type { ProjectsPage } from "@/types/messages";
 
 export const content: ProjectsPage = {
   Welsh: {

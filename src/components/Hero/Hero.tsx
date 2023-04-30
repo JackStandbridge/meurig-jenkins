@@ -1,4 +1,5 @@
-import { Language } from "@/types/language";
+import type { Language } from "@/types/language";
+
 import { Fragment } from "react";
 import { content } from "@/content/home";
 import styles from "./hero.module.scss";

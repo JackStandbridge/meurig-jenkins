@@ -1,4 +1,4 @@
-import { Language } from "./language";
+import type { Language } from "./language";
 
 type Messages<T> = Record<Language, T>;
 
@@ -19,9 +19,17 @@ export type Nav = Messages<{
   };
 }>;
 
+export type Footer = Messages<{
+  youtube: string;
+  twitter: string;
+  email: string;
+}>;
+
 export type LanguageSwitcher = Messages<{
   prompt: string;
 }>;
+
+export type Image = { src: string; messages: Messages<{ alt: string }> };
 
 export type Carousel = Messages<{ previousSlide: string; nextSlide: string }>;
 
@@ -38,7 +46,13 @@ export type AboutPage = Messages<{
   blurb: string;
 }>;
 
-export type Image = { src: string; messages: Messages<{ alt: string }> };
+export type CompanyPage = {
+  logo: Image;
+  messages: Messages<{
+    title: string;
+    blurb: string;
+  }>;
+};
 
 export type ContentPage = {
   id: string;

@@ -1,5 +1,7 @@
-import { Language } from "@/types/language";
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import type { Language } from "@/types/language";
+import type { PayloadAction } from "@reduxjs/toolkit";
+
+import { createSlice } from "@reduxjs/toolkit";
 
 export type PreferencesState = {
   language: Language;

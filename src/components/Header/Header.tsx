@@ -3,12 +3,10 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Nav } from "@/components/Nav";
 import styles from "./header.module.scss";
 
-export type HeaderProps = {};
-
-export const Header = ({}: HeaderProps): JSX.Element => {
+export const Header = (): JSX.Element => {
   const [toggled, setToggled] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setToggled(!toggled);
   };
 

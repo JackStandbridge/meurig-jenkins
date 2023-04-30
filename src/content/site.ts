@@ -1,9 +1,10 @@
-import type { Nav, LanguageSwitcher, Carousel } from "@/types/messages";
+import type { Nav, LanguageSwitcher, Carousel, Footer } from "@/types/messages";
 
 export const content: {
   nav: Nav;
   languageSwitcher: LanguageSwitcher;
   carousel: Carousel;
+  footer: Footer;
 } = {
   nav: {
     Welsh: {
@@ -63,6 +64,18 @@ export const content: {
     English: {
       previousSlide: "Previous slide",
       nextSlide: "Next slide",
+    },
+  },
+  footer: {
+    Welsh: {
+      youtube: "Gweld fy nhudalen Youtube",
+      twitter: "Gweld fy nhudalen Twitter",
+      email: "E-bostiwch fi",
+    },
+    English: {
+      youtube: "View my Youtube page",
+      twitter: "View my Twitter page",
+      email: "Email me",
     },
   },
 };

@@ -7,10 +7,10 @@ export const store = configureStore({
   devTools: true,
 });
 
-export const makeStore = () => store;
-
 export type AppStore = typeof store;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+
+export const makeStore = (): AppStore => store;
 
 export const wrapper = createWrapper<AppStore>(makeStore);
