@@ -12,7 +12,7 @@ export type CompanyProps = {
 
 export const Company = ({ language }: CompanyProps): JSX.Element => {
   return (
-    <Page description="Pendraig Films production company">
+    <Page description="Pendraig Films production company" pageName="PenDgraig">
       <div className={styles.logoContainer}>
         <Image
           className={styles.logo}

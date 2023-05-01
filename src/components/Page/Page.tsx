@@ -11,6 +11,14 @@ export type PageProps = {
   description: string;
 };
 
+const getTitle = (pageName: string | undefined): string => {
+  if (pageName) {
+    return `${pageName} | Meurig Jenkins`;
+  }
+
+  return "Meurig Jenkins";
+};
+
 export const Page = ({
   children,
   pageName,
@@ -18,7 +26,7 @@ export const Page = ({
 }: PageProps): JSX.Element => (
   <>
     <Head>
-      <title>{pageName ? pageName + " | " : ""}Meurig Jenkins</title>
+      <title>{getTitle(pageName)}</title>
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
