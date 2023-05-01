@@ -14,6 +14,7 @@ export const Hero = ({ language }: HeroProps): JSX.Element => (
       <video
         src="/videos/banner.mp4"
         autoPlay
+        playsInline
         muted
         loop
         className={styles.video}
