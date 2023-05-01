@@ -11,6 +11,8 @@
 
 	min-height: 72px;
 
+	transition: transform 0.5s;
+
 	&::before, &::after {
 		display: block;
 		content: "";
@@ -42,7 +44,7 @@
 	justify-content: space-between;
 
 	@include mixins.mobile {
-		.toggled & {
+		.expanded & {
 			background: var(--background);
 			position: fixed;
 			top: 0;
@@ -57,7 +59,7 @@
 			overflow: scroll;
 		}
 
-		.hidden & {
+		.collapsed & {
 			display: none;
 		}
 	}
@@ -118,7 +120,7 @@
 	width: 80%;
 	transform: translateX(-1.25rem) translateY(-0.5rem) rotate(0deg);
 
-	.toggled & {
+	.expanded & {
 		width: 80%;
 		transform: translateX(-1.25rem) rotate(-45deg);
 	}
@@ -128,8 +130,12 @@
 	width: 40%;
 	transform: translateX(-1.25rem) translateY(0.5rem) rotate(0deg);
 
-	.toggled & {
+	.expanded & {
 		width: 80%;
 		transform: translateX(-1.25rem) rotate(45deg);
 	}
+}
+
+.hidden {
+	transform: translateY(-100%);
 }

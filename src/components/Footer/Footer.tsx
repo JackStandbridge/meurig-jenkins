@@ -48,7 +48,6 @@ export const Footer = ({ language }: FooterProps): JSX.Element => (
         </li>
       </ul>
     </nav>
-
     <p className={styles.info}>
       &copy;&nbsp;Meurig Jenkins&nbsp;
       {Intl.DateTimeFormat("en-GB", { year: "numeric" }).format()}
