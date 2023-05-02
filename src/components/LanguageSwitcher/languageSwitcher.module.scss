@@ -51,10 +51,8 @@
 
 	@include mixins.mobile {
 		top: unset;
-		right: 0;
+		right: -0.5rem;
 		bottom: 110%;
-		padding: unset;
-		box-shadow: none;
 	}
 }
 
