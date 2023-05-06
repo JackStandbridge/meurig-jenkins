@@ -1,13 +1,14 @@
 @use '@/styles/mixins';
 
 .title {
+	margin-top: 1em;
+	margin-bottom: 1em;
+
 	font-size: 4rem;
 	letter-spacing: 5px;
 	font-feature-settings: "lnum";
 
 	font-family: Bogart, sans-serif;
-
-	margin-bottom: 1em;
 
 	@include mixins.mobile {
 		font-size: 3rem;

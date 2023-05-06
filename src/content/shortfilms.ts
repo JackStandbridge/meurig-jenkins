@@ -10,11 +10,11 @@ export const content: ShortfilmsPage = {
   shortfilms: {
     stanza: {
       id: "stanza",
-      videoId: "",
-      poster: "",
+      videoId: "heHj9FtNi5o",
+      poster: "/images/stanza.png",
       images: [
         {
-          src: "/images/luna-poster.jpeg",
+          src: "/images/stanza-reel-1.jpeg",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",
@@ -25,7 +25,7 @@ export const content: ShortfilmsPage = {
           },
         },
         {
-          src: "/images/luna-poster.jpeg",
+          src: "/images/stanza-reel-2.jpeg",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",
@@ -36,7 +36,7 @@ export const content: ShortfilmsPage = {
           },
         },
         {
-          src: "/images/luna-poster.jpeg",
+          src: "/images/stanza-reel-3.jpeg",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",
@@ -47,7 +47,51 @@ export const content: ShortfilmsPage = {
           },
         },
         {
-          src: "/images/luna-poster.jpeg",
+          src: "/images/stanza-reel-4.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/stanza-reel-5.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/stanza-reel-6.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/stanza-reel-7.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/stanza-reel-8.jpeg",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",
@@ -62,13 +106,21 @@ export const content: ShortfilmsPage = {
         Welsh: {
           title: "The Stanza Principle",
           description: `
+            The Stanza Principle Welsh Description
 
+            etc.
+
+            etc.
           `,
         },
         English: {
           title: "The Stanza Principle",
           description: `
+            The Stanza Principle English Description
 
+            etc.
+
+            etc.
           `,
         },
       },
@@ -76,7 +128,7 @@ export const content: ShortfilmsPage = {
     trosech: {
       id: "trosech",
       videoId: "",
-      poster: "",
+      poster: "/images/trosech.png",
       messages: {
         Welsh: {
           title: "Trosech",
@@ -95,7 +147,7 @@ export const content: ShortfilmsPage = {
     vultures: {
       id: "vultures",
       videoId: "",
-      poster: "",
+      poster: "/images/vultures.png",
       messages: {
         Welsh: {
           title: "Glass Vultures",
