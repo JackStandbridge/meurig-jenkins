@@ -33,18 +33,6 @@ export const Nav = ({ language }: NavProps): JSX.Element => {
 
         <li className={styles.li} onBlur={handleBlur}>
           <Dropdown
-            expanded={expanded === "shortfilms"}
-            handleClick={(): void => handleClick("shortfilms")}
-            title={{
-              name: content.nav[language].shortfilms.name,
-              href: "/shortfilms",
-            }}
-            items={getItemsForDropdown(language, "shortfilms")}
-          />
-        </li>
-
-        <li className={styles.li} onBlur={handleBlur}>
-          <Dropdown
             expanded={expanded === "projects"}
             handleClick={(): void => handleClick("projects")}
             title={{
@@ -52,6 +40,18 @@ export const Nav = ({ language }: NavProps): JSX.Element => {
               href: "/projects",
             }}
             items={getItemsForDropdown(language, "projects")}
+          />
+        </li>
+
+        <li className={styles.li} onBlur={handleBlur}>
+          <Dropdown
+            expanded={expanded === "shortfilms"}
+            handleClick={(): void => handleClick("shortfilms")}
+            title={{
+              name: content.nav[language].shortfilms.name,
+              href: "/shortfilms",
+            }}
+            items={getItemsForDropdown(language, "shortfilms")}
           />
         </li>
 
