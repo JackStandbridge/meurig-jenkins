@@ -153,7 +153,14 @@ export const content: ShortfilmsPage = {
         English: {
           title: "Trosech",
           description: `
-
+          Tagline:  For the Old Land of my Fathers.
+          Logline:  A disillusioned hacker, a fugitive drunkard and a strained politician crusade against the oppressive English, each vying for his/her version of Welsh independence in a dystopian Britain. 
+          
+          A bilingual Welsh dystopian science fiction, set in a world where English is the only language legally allowed to be spoken.  The idea of this show is to focus on the importance of the Welsh language and how the Welsh identity fits into the British identity.
+          
+          The show is designed to be dark and gritty, and to tackle difficult topics that have become more prevelant in Wales recently.  Although I have spoken to some people about possibly making the show, so far nothing has come to fruition, but I have a lot of faith in, and am very passionate about this project and hope to someday make this series professionally.
+          
+          The show's seven-episode arc is planned out, and I have uploaded the script for the first episode in English and Welsh here.
           `,
         },
       },
