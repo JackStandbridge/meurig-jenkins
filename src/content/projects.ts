@@ -104,7 +104,7 @@ export const content: ProjectsPage = {
           `,
         },
         English: {
-          title: "Three.Nine.Twelve - Hysbyseb Forgotten Sons Apparel",
+          title: "Three.Nine.Twelve - Forgotten Sons Apparel Advert",
           description: `
             An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel. Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
 
