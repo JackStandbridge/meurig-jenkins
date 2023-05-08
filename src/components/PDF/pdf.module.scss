@@ -20,9 +20,8 @@
 
 	canvas {
 		background: var(--background);
-		width: unset !important;
-		height: unset !important;
-		aspect-ratio: 900 / 1273;
+		width: 100% !important;
+		height: 100% !important;
 		max-width: 100%;
 	}
 }
@@ -37,7 +36,7 @@
 	align-self: start;
 	grid-area: 1 / 1;
 
-	padding: 4rem 0;
+	margin: 4rem 0;
 
 	position: sticky;
 	z-index: 2;
