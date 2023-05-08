@@ -1,0 +1,95 @@
+@use '@/styles/mixins';
+
+.wrapper {
+	position: relative;
+}
+
+.document {
+	width: 100%;
+	background: var(--background);
+}
+
+.page {
+	width: 100%;
+	aspect-ratio: 900 / 1273;
+	background: var(--background);
+	filter: invert(1);
+
+	canvas {
+		background: var(--background);
+		width: unset !important;
+		height: unset !important;
+		aspect-ratio: 900 / 1273;
+		max-width: 100%;
+	}
+}
+
+.previousPage {
+	@extend .page;
+	position: absolute !important;
+	z-index: 1;
+}
+
+%button {
+	@include mixins.outer-focus;
+
+	display: block;
+	border: none;
+
+	background: rgba(255, 255, 255, 0.7);
+
+	height: 3rem;
+	width: 3rem;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+
+	cursor: pointer;
+
+	&::before, &::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: calc(50% - 1px);
+		height: 2px;
+		width: 30%;
+		background: black;
+	}
+
+	&::before {
+		transform: rotate(45deg) translateX(-50%);
+	}
+
+	&::after {
+		transform: rotate(-45deg) translateX(-50%);
+	}
+
+	@include mixins.mobile {
+		scale: 0.7;
+	}
+}
+
+.prev {
+	@extend %button;
+	left: 1rem;
+
+	transform: translateY(-50%) rotate(180deg);
+
+	@include mixins.mobile {
+		translate: -1rem;
+	}
+}
+
+.next {
+	@extend %button;
+	right: 1rem;
+
+	transform: translateY(-50%);
+
+	@include mixins.mobile {
+		translate: 1rem;
+	}
+}

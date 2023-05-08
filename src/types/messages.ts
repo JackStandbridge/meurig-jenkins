@@ -59,6 +59,7 @@ export type ContentPage = {
   videoId?: string;
   poster: string;
   images?: Image[];
+  pdfs?: string[];
   messages: Messages<{ title: string; description: string }>;
 };
 
@@ -78,6 +79,10 @@ export type Shortfilm = ContentPage;
 
 export type ShortfilmList = Record<string, Shortfilm>;
 
-export type ShortfilmsPage = Messages<{ title: string }> & {
+export type ShortfilmsPage = Messages<{
+  title: string;
+  nextPage: string;
+  prevPage: string;
+}> & {
   shortfilms: ShortfilmList;
 };

@@ -1,9 +1,9 @@
-.iframe {
-	border: none;
-	width: 100%;
-	aspect-ratio: 16 / 9;
-}
-
 .title {
 	margin-bottom: 1em;
+}
+
+.pdfs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }

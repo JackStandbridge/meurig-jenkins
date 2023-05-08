@@ -37,4 +37,6 @@
 	&:not(:focus-visible) {
 		@include mixins.screen-reader;
 	}
+
+	color: inherit;
 }
