@@ -156,7 +156,7 @@ export const content: ShortfilmsPage = {
           Tagline:  For the Old Land of my Fathers.
           Logline:  A disillusioned hacker, a fugitive drunkard and a strained politician crusade against the oppressive English, each vying for his/her version of Welsh independence in a dystopian Britain. 
           
-          A bilingual Welsh dystopian science fiction, set in a world where English is the only language legally allowed to be spoken.  The idea of this show is to focus on the importance of the Welsh language and how the Welsh identity fits into the British identity.
+          A bilingual Welsh/English dystopian science fiction, set in a near-future world where English is the only language legally allowed to be spoken in Britain.  The idea of this show is to focus on the importance of the Welsh language and how the Welsh identity fits into the British identity.
           
           The show is designed to be dark and gritty, and to tackle difficult topics that have become more prevalent in Wales recently.  Although I have spoken to some people about possibly making the show, so far nothing has come to fruition, but I have a lot of faith in, and am very passionate about this project and hope to someday make this series professionally.
           
