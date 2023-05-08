@@ -5,6 +5,7 @@
 }
 
 .document {
+	display: grid;
 	width: 100%;
 	background: var(--background);
 }
@@ -14,6 +15,8 @@
 	aspect-ratio: 900 / 1273;
 	background: var(--background);
 	filter: invert(1);
+
+	grid-area: 1 / 1;
 
 	canvas {
 		background: var(--background);
@@ -30,6 +33,17 @@
 	z-index: 1;
 }
 
+.buttonWrapper {
+	align-self: start;
+	grid-area: 1 / 1;
+
+	padding: 4rem 0;
+
+	position: sticky;
+	z-index: 2;
+	top: 50%;
+}
+
 %button {
 	@include mixins.outer-focus;
 
@@ -44,8 +58,6 @@
 	border-radius: 50%;
 
 	position: absolute;
-	top: 50%;
-
 	cursor: pointer;
 
 	&::before, &::after {
