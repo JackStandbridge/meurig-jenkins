@@ -1,10 +1,12 @@
 import type { Language } from "@/types/language";
 
-import styles from "./footer.module.scss";
-import { content } from "@/content/site";
 import { YoutubeIcon } from "./YoutubeIcon";
 import { EmailIcon } from "./EmailIcon";
 import { TwitterIcon } from "./TwitterIcon";
+import { InstagramIcon } from "./InstagramIcon";
+
+import styles from "./footer.module.scss";
+import { content } from "@/content/site";
 
 export type FooterProps = {
   language: Language;
@@ -46,8 +48,19 @@ export const Footer = ({ language }: FooterProps): JSX.Element => (
             <TwitterIcon />
           </a>
         </li>
+
+        <li>
+          <a className={styles.link} href="https://twitter.com/SmaugPenDraig">
+            <span className="screenReader">
+              {content.footer[language].instagram}
+            </span>
+
+            <InstagramIcon />
+          </a>
+        </li>
       </ul>
     </nav>
+
     <p className={styles.info}>
       &copy;&nbsp;Meurig Jenkins&nbsp;
       {Intl.DateTimeFormat("en-GB", { year: "numeric" }).format()}

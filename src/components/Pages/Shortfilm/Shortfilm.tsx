@@ -30,7 +30,7 @@ export const Shortfilm = ({ language, id }: ShortfilmProps): JSX.Element => {
   }
 
   const renderImages = (): JSX.Element | null =>
-    !images || images.length ? null : (
+    !images || !images.length ? null : (
       <Carousel>
         {images.map(({ src, messages }, i) => (
           <Carousel.Slide src={src} alt={messages[language].alt} key={i} />

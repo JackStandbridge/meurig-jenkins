@@ -71,11 +71,13 @@ export const content: {
       youtube: "Gweld fy nhudalen Youtube",
       twitter: "Gweld fy nhudalen Twitter",
       email: "E-bostiwch fi",
+      instagram: "Gweld fy nhudalen Instagram",
     },
     English: {
       youtube: "View my Youtube page",
       twitter: "View my Twitter page",
       email: "Email me",
+      instagram: "View my Instagram page",
     },
   },
 };

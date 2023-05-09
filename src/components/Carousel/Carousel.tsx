@@ -17,7 +17,10 @@ export const Carousel = ({
   children,
   language,
 }: CarouselProps): JSX.Element => {
-  const [emblaRef, carousel] = useEmblaCarousel({ skipSnaps: true });
+  const [emblaRef, carousel] = useEmblaCarousel({
+    skipSnaps: true,
+    inViewThreshold: 0,
+  });
 
   const handlePrev = (): void => {
     if (carousel?.canScrollPrev()) {

@@ -14,7 +14,7 @@ export const content: ShortfilmsPage = {
   shortfilms: {
     stanza: {
       id: "stanza",
-      videoId: "heHj9FtNi5o",
+      videoId: "fk6oqgrrxVY",
       poster: "/images/stanza.png",
       images: [
         {
@@ -170,6 +170,107 @@ export const content: ShortfilmsPage = {
     vultures: {
       id: "vultures",
       videoId: "",
+      images: [
+        {
+          src: "/images/vultures-reel-1.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-2.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-3.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-4.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-5.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-6.jpeg",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-7.png",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-8.png",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+        {
+          src: "/images/vultures-reel-9.png",
+          messages: {
+            Welsh: {
+              alt: "Image description in Welsh",
+            },
+            English: {
+              alt: "Image description in English",
+            },
+          },
+        },
+      ],
       poster: "/images/vultures.png",
       messages: {
         Welsh: {

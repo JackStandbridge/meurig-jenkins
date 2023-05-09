@@ -23,6 +23,7 @@ export type Footer = Messages<{
   youtube: string;
   twitter: string;
   email: string;
+  instagram: string;
 }>;
 
 export type LanguageSwitcher = Messages<{
