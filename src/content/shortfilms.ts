@@ -227,7 +227,7 @@ export const content: ShortfilmsPage = {
           },
         },
         {
-          src: "/images/vultures-reel-6.jpeg",
+          src: "/images/vultures-reel-6.png",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",
@@ -260,7 +260,7 @@ export const content: ShortfilmsPage = {
           },
         },
         {
-          src: "/images/vultures-reel-9.png",
+          src: "/images/vultures-reel-9.jpeg",
           messages: {
             Welsh: {
               alt: "Image description in Welsh",

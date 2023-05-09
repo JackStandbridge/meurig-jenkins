@@ -30,16 +30,6 @@ export const Footer = ({ language }: FooterProps): JSX.Element => (
         </li>
 
         <li>
-          <a className={styles.link} href="mailto:meurigjenkinscyd@gmail.com">
-            <span className="screenReader">
-              {content.footer[language].email}
-            </span>
-
-            <EmailIcon />
-          </a>
-        </li>
-
-        <li>
           <a className={styles.link} href="https://twitter.com/SmaugPenDraig">
             <span className="screenReader">
               {content.footer[language].twitter}
@@ -50,12 +40,25 @@ export const Footer = ({ language }: FooterProps): JSX.Element => (
         </li>
 
         <li>
-          <a className={styles.link} href="https://twitter.com/SmaugPenDraig">
+          <a
+            className={styles.link}
+            href="https://www.instagram.com/meurigjenkins.film/"
+          >
             <span className="screenReader">
               {content.footer[language].instagram}
             </span>
 
             <InstagramIcon />
+          </a>
+        </li>
+
+        <li>
+          <a className={styles.link} href="mailto:meurigjenkinscyd@gmail.com">
+            <span className="screenReader">
+              {content.footer[language].email}
+            </span>
+
+            <EmailIcon />
           </a>
         </li>
       </ul>
