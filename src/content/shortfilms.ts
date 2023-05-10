@@ -285,7 +285,7 @@ export const content: ShortfilmsPage = {
 
             Having saved up money for all the equipment, we've set out and filmed the first episode, which is currently in post production.  We overcame many hurdles, acquiring permission for various locations to shoot, being under time constraints, storyboarding and fixing and adapting to problems as they occurred.
 
-            Episode two and three are currently in pre-production.
+            Episode one is in post-production.  Episode two and three are currently in pre-production.
 
             ## Equipment
             - BlackMagic Pocket Cinema Camera 6k
