@@ -106,7 +106,7 @@ export const content: ProjectsPage = {
         English: {
           title: "Three.Nine.Twelve - Forgotten Sons Apparel Advert",
           description: `
-            An advert created for Manchester-based indie clothing brand Forgotten Sons Apparel. Filmed around Menai Bridge, we focussed on playing into the film and tarot themes of the clothing line.
+            An advertisement created for Manchester-based indie clothing brand Forgotten Sons Apparel. Evocative of the film & tarot themes of the brand. Filmed in Menai Bridge.
 
             ## Equipment
             - Blackmagic Pocket Cinema Camera 6k
