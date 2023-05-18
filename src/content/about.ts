@@ -12,7 +12,7 @@ export const content: AboutPage = {
   English: {
     title: "About me",
     blurb: `
-      Filmmaker from Aberystwyth, now living in Anglesey, North Wales. My films take their cues from inspirations both near and far from home, and I am always looking to delve into the oddities of normality.
+      Filmmaker from Aberystwyth, now living in Anglesey, North Wales. My films are inspired by situations, scenery and characters local and distant. I always seek to explore the oddities of normality.
 
       I practically grew up in the theatre, performing in plays (The Goalkeeper's Revenge; The Roses of Eyam; Twelfth Night), musicals & operettas (Bugsy Malone; The Sorcerer's Apprentice; Ruddigore), the chorus in many pantomimes (Aladdin, Beauty and the Beast), and Aberystwyth Summer Season musicals (The King and I; The Sound of Music; Peter Pan).  
       
