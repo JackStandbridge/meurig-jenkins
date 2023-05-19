@@ -22,7 +22,7 @@ export const content: AboutPage = {
 
       My films are inspired by situations and personalities both local and distant. I always seek to explore the oddities of everyday life.
 
-      I practically grew up in the theatre. I performed in plays (The Goalkeeper’s Revenge; The Roses of Eyam; Twelfth Night), musicals and operettas (Bugsy Malone; The Sorcerer’s Apprentice; Ruddigore). I took part in the chorus of pantomimes (Aladdin; Beauty and the Beast) and took leading roles in summer seasons at Aberystwyth Arts Centre (The King and I; The Sound of Music; Peter Pan).  
+      I practically grew up in the theatre. I performed in plays (<i>The Goalkeeper’s Revenge; The Roses of Eyam; Twelfth Night</i>), musicals and operettas (Bugsy Malone; The Sorcerer’s Apprentice; Ruddigore). I took part in the chorus of pantomimes (Aladdin; Beauty and the Beast) and took leading roles in summer seasons at Aberystwyth Arts Centre (The King and I; The Sound of Music; Peter Pan).  
       
       Now I’m pursuing a career in the film industry as an actor, writer and director. I’m seeking to refine my style, and explore as many opportunities as possible.
 
