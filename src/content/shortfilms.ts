@@ -304,6 +304,7 @@ export const content: ShortfilmsPage = {
             Makeup: Tasmin Lucy Smith-Brown, Hannah Ashworth, Alicia Kate
             Editor: Meurig Jenkins
             Logo Design: Mitchell Cowell
+            3D Modeler: Sam Parrish
             Music: Meurig Jenkins
             Actors: Meurig Jenkins, Noel Davies, Jonathan Haynes, Elis Owen
           `,
