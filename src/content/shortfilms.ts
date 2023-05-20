@@ -151,6 +151,16 @@ export const content: ShortfilmsPage = {
         Welsh: {
           title: "Trosech",
           description: `
+          Llinell Glo:  Er Mwyn Hen Wlad fy Nhadau.
+          Llinyn Cyfrif:  Ymgyrcha haciwr dadrithiedig, meddwyn ar ffo a gwleidydd dan bwysau yn erbyn y Saeson gwrthrymus, y naill a’r llall yn cystadlu am ei syniad o annibyniaeth i Gymru mewn Prydain dystopaidd. 
+
+          Cyfres ffuglen wyddonol, ddystopaidd, ddwyieithog Gymraeg/ Saesneg yw Trosech. Fe’i lleolir mewn byd yn y dyfodol agos lle mai Saesneg yw’r unig iaith a ganiateir ym Mhrydain. Y themáu yw pwysigrwydd yr iaith Gymraeg, a’r amrywiaeth o farnau ynghylch y berthynas rhwng hunaniaeth Gymraeg a hunaniaeth Saesneg.
+
+          Mae’r gyfres dywyll, ddygn hon yn ymdrin â phynciau anodd sydd wedi dod yn fwy dadleuol yng Nghymru yn ddiweddar.
+
+          Mae genny ffydd fawr yn y gyfres hon, ac rwyn gobeithio y bydd hi’n cael ei chynhyrchu’n broffesiynol.
+
+          Cynllunir bwa saith pennod y sioe yn llawn. Uwch-llwythir y rhan gyntaf yn Saesneg ac yn Gymraeg yma.
           `,
         },
         English: {
@@ -159,11 +169,13 @@ export const content: ShortfilmsPage = {
           Tagline:  For the Old Land of my Fathers.
           Logline:  A disillusioned hacker, a fugitive drunkard and a strained politician crusade against the oppressive English, each vying for his/her version of Welsh independence in a dystopian Britain.
 
-          A bilingual Welsh/English dystopian science fiction, set in a near-future world where English is the only language legally allowed to be spoken in Britain.  The idea of this show is to focus on the importance of the Welsh language and how the Welsh identity fits into the British identity, exploring the variety of viewpoints.
+          <i>Trosech</i> is a bi-lingual, Welsh/English dystopian science fiction series. It is set in a near-future world where English is the only language allowed in Britain.  The themes are the importance of the Welsh language, and the variety of viewpoints regarding the relationship between Welsh identity and British identity.
 
-          The show is designed to be dark and gritty, and to tackle difficult topics that have become more prevalent in Wales recently.  Although I have spoken to some people about possibly making the show, so far nothing has come to fruition, but I have a lot of faith in, and am very passionate about this project and hope to someday make this series professionally.
+          This dark, gritty series tackles difficult topics that have become more controversial in Wales recently.
 
-          The show's seven-episode arc is planned out, and I have uploaded the script for the first episode in English and Welsh here.
+          I have great faith in this series, and hope to have it produced professionally.
+
+          The show’s seven-episode arc is fully planned. The script for the first episode in English and Welsh is uploaded here.
           `,
         },
       },
