@@ -131,6 +131,7 @@ export const content: ShortfilmsPage = {
             Cinematography: Meurig Jenkins
             Camera: James Green, Aled Canter
             Runner: Jack Marshall
+            Logo Design: Jack Standbridge
             Editor: Meurig Jenkins
             Music: Meurig Jenkins
             Actors: Meurig Jenkins, Tomos Ashworth, Joanna Arvanitis, Paula Gallagher, Daz O'Connell, Oliver Hando, Laura Millar, Matt Heslop, Natasha Blackmore
