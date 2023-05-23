@@ -110,19 +110,24 @@ export const content: ShortfilmsPage = {
         Welsh: {
           title: "The Stanza Principle",
           description: `
+            <i>The Stanza Principle</i> oedd fy nghynnig cyntaf yn 2016 i greu rhan o sioe. Treuliais flynyddoedd yn teithio rhwng Bangor ac Aberystwyth ar y bws. Wrth deithio byddwn yn breuddwydio am y sioe deledu roeddwn am ei gwneud.
+
+            Wedi ei ysbrydoli gan ffilm ias a chyffro megis <i>Cube</i> and <i>9 Hours; 9 Persons; 9 Doors</i>, roedd hwn yn gynnig uchelgeisiol i rywun ag ychydig iawn o brofiad o ffilmio. Gyda chaniatâd y perchenog, cawsom ddefnyddio tŷ wedi ei hanner-adeiladu yn Birmingham. Fe wnaethom adeiladu set a’i beintio â’r deunydd wrth law, gan ffilmio pump golygfa un-cais i wneud un rhan. Er i’m diffyg profiad arwain at ffilm crai, dysgais lawer, ac fe gadarnhaodd y profiad gymaint o fwynhâd roeddwn yn ei gael o ffilmio. Fe fwynheais weithio’n greadigol gydag eraill, ac rwyn ymfalchϊo yn yr hyn a wnaethom.
+
+            Yn 2022, deuthum o hyd i’r ffilm mewn hen yriant called. Mae fy ngwybodaeth dechnegol wedi gwella erbyn hyn, ac rwyn gallu defnyddio DaVinci Resolve i olygu ac i chywiro lliw/graddio. Rwyf wrthi’n rhoi popeth at ei gilydd.
           `,
         },
         English: {
           title: "The Stanza Principle",
           description: `
-            My very first attempt at creating an episode of a show in 2016.  I spent years travelling between Bangor and Aberystwyth by bus, and I spent the hours dreaming up a TV show I would want to make.
+            <i>The Stanza Principle</i> was my very first attempt in 2016 at creating an episode of a show. I spent years travelling between Bangor and Aberystwyth by bus. While travelling, I dreamed up a T/V. show I would like to make.
 
-            Inspired by psychological thrillers such as "Cube" and "9 Hours; 9 Persons; 9 Doors," this was an ambitious attempt for someone with little experience in filming.  With permission from the landlord, we used a large half-constructed house as a set in Birmingham, building and painting with the materials we had to hand, filming five one-take scenes to make up the episode.  Although our lack of experience made for very rough footage, I learned a lot, and it cemented how much I loved doing this and working with others creatively, and I'm very proud of what we all did.
+            Inspired by psychological thrillers such as <i>Cube</i> and <i>9 Hours; 9 Persons; 9 Doors</i>, this was an ambitious attempt for someone with very little experience in filming. With the landlord’s permission, we used a large, half-constructed house in Birmingham. We built and painted with the materials we had to hand, filming five one-take scenes to make up the episode. Although our lack of experience made for very rough footage, I learned a lot, and the experience confirmed how much I loved filming. I enjoyed working with others creatively, and I’m proud of what we did.
 
-            In 2022, I found all the footage on an old hard drive, and with how much I've learned with editing and colour correcting/grading in DaVinci Resolve, I am in the process of putting it together.
+            In 2022 I found all the footage on an old hard-drive. My expertise has improved now, and I can use DaVinci Resolve for editing, colour- correct/grading. I am in the process of putting it all together.
 
             ## Equipment
-            - Unknown
+            - Camera Unknown
             - Home-made wooden stabilizer
             - Vegas Pro
 
