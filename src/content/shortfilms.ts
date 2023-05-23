@@ -128,6 +128,7 @@ export const content: ShortfilmsPage = {
 
             ## Equipment
             - Camera Unknown
+            - RØDE Auxiliary VideoMic GO
             - Home-made wooden stabilizer
             - Vegas Pro
 
