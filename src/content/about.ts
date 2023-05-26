@@ -18,7 +18,7 @@ export const content: AboutPage = {
   English: {
     title: "About me",
     blurb: `
-      I am a film maker from Aberystwyth, now living in Anglesea, North Wales. 
+      I am a film maker from Aberystwyth, now living in Anglesey, North Wales. 
 
       My films are inspired by situations and personalities both local and distant. I always seek to explore the oddities of everyday life.
 
