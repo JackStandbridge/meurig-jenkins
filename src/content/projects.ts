@@ -17,6 +17,14 @@ export const content: ProjectsPage = {
         Welsh: {
           title: "Hysbyseb Hydeout Espresso Martini",
           description: `
+            Gwers mewn creu coctel â steil oedd hon, a ffilmiwyd ar fympwy un noson i brofi’r Black Magic Cinema Camera 6k a’r Zhiyun 2 Wheelbull 2 Gimbal, ffilmiwyd gan feddwl am rotoscopi.
+
+            ## Cyfarpar
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
+
+            ## Credydau
             Cyfarwyddwyd gan Meurig Jenkins
             Cyfarwyddwr Cynorthwyol: Hannah Ashworth
             Camera: Griff Edwards
@@ -55,8 +63,14 @@ export const content: ProjectsPage = {
         Welsh: {
           title: 'Hysbyseb The Hydeout "Experience" 2022',
           description: `
-            Hydeout Southern Bar-B-Q a Bwyty Smokehouse ym Mhorthaethwy, Ynys Môn!
+            Hysbysebiad oedd hwn am dŷ bwyta ym Mhortheithwy. Helpwyd ni gan actorion o’r ysgol leol a myfyrwyr o’r brifysgol, fel actorion ychwanegol a threfnwyr llwyfan i symud dodrefn gan ddyfeisio yn y fan a’r lle i greu golygfeydd mwy neilltuol Cyfansoddais i gerddoriaeth addas at rythm y fersiwn gorffenedig, i greu hysbysebiad caboledig.
 
+            ## Cyfarpar
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
+
+            ## Credydau
             Cyfarwyddwyd gan Meurig Jenkins
             Sinematograffi gan Griff Edwards
             Sinematograffi Cynorthwyol gan Trevor Gardner
@@ -97,10 +111,17 @@ export const content: ProjectsPage = {
         Welsh: {
           title: "Three.Nine.Twelve - Hysbyseb Forgotten Sons Apparel",
           description: `
-            Cerddoriaeth gan A Few Too Many
+            Hysbysebiad oedd hwn a grȅwyd ar gyfer gwneuthuriad dillad annibynol, Forgotten Sons Apparel a sefydlwyd ym Manceinion. Wedi ei ffilmio ym Mhortheithwy, mae’n dwyn i gof themáu ffilm a Tarot y gwneuthuriad.
 
+            ## Equipment
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
+            
+            ## Credydau
             Modelau: Jonathan Lee Haynes, Anthony Salisbury, Tyler Stephens
             Cyfarwyddwr/Camera/Golygydd: Meurig Jenkins
+            Cerddoriaeth:  Someday gan A Few Too Many
           `,
         },
         English: {
@@ -177,11 +198,16 @@ export const content: ProjectsPage = {
         Welsh: {
           title: "Luna's Chill Day In",
           description: `
-            Hyd yn oed ar ddiwrnod oer, mae'n bwysig hela am fwyd.
+            Hyd yn oed ar ddiwrnod ymlacio, mae’n bwysig hela bwyd. Hon oedd y ffilm gyntaf imi ei gwneud tua diwedd 2021, ar ôl imi gael y camera a’r fodrwy ddwbl (gimbal). Fe’i fflilmiais i hi er mwyn mynd i’r afael â’r offer a’r feddalwedd olygu.
 
-            Diolch arbennig i Matt a Luna am adael i mi boeni arnyn nhw gyda'r camera!
+            ## Cyfarpar
+            - Blackmagic Pocket Cinema Camera 6k
+            - Zhiyun Weebill 2 gimbal
+            - DaVinci Resolve Studio
 
-            Cerddoriaeth "Luna's Chill Day In" a ysgrifennwyd gan Meurig Jenkins.
+            ## Credydau
+            Cyfarwyddwr/Camera/Golygydd: Meurig Jenkins
+            Cerddoriaeth: Luna's Chill Day In by Meurig Jenkins
           `,
         },
         English: {
@@ -212,9 +238,16 @@ export const content: ProjectsPage = {
         Welsh: {
           title: "The Good The Bad and the Brummie",
           description: `
-            Edrychwch pa mor dawel yw e.
+            Sylwch pa mor llonydd yw e.  Ffilm fer iawn oedd hon i ymarfer creu effeithiau gweledol, megis chwistrell gwaed, taniad gwn a fflachau gwn.
 
-            Cyfarwyddwyd gan Meurig Jenkins.
+           ## Cyfarpar
+            - Blackmagic Pocket Cinema Camera 6k
+            - Kenro Twin Tube Video Tripod
+            - DaVinci Resolve Studio
+
+            ## Credydau
+            Cyfarwyddwr/Golygydd: Meurig Jenkins.
+            Cast: Meurig Jenkins, Matt Kings.
           `,
         },
         English: {
