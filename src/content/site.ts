@@ -9,7 +9,8 @@ export const content: {
   nav: {
     Welsh: {
       home: "hafan",
-      about: "amdanaf i",
+      acting: "actio",
+      videography: "Fideosyddiaeth",
       company: "Ffilmiau PenDraig",
       shortfilms: {
         name: "ffilmiau fer",
@@ -29,7 +30,8 @@ export const content: {
     },
     English: {
       home: "home",
-      about: "about",
+      acting: "acting",
+      videography: "Videography",
       company: "PenDraig Films",
       shortfilms: {
         name: "short films",
