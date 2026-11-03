@@ -1,4 +1,5 @@
 import type { Language } from "@/types/language";
+import type { SiteLinks } from "@/types/content";
 
 import { YoutubeIcon } from "./YoutubeIcon";
 import { EmailIcon } from "./EmailIcon";
@@ -6,67 +7,50 @@ import { TwitterIcon } from "./TwitterIcon";
 import { InstagramIcon } from "./InstagramIcon";
 
 import styles from "./footer.module.scss";
-import { content } from "@/content/site";
+import { useSite } from "@/components/Site";
 
 export type FooterProps = {
   language: Language;
 };
 
-export const Footer = ({ language }: FooterProps): JSX.Element => (
-  <footer className={styles.footer}>
-    <nav className={styles.nav}>
-      <ul className={styles.list}>
-        <li>
-          <a
-            className={styles.link}
-            href="https://www.youtube.com/@ffilmiaupendraigfilms6144"
-          >
-            <span className="screenReader">
-              {content.footer[language].youtube}
-            </span>
+const icons: Record<keyof SiteLinks, () => JSX.Element> = {
+  youtube: YoutubeIcon,
+  twitter: TwitterIcon,
+  instagram: InstagramIcon,
+  email: EmailIcon,
+};
 
-            <YoutubeIcon />
-          </a>
-        </li>
+const hrefFor = (name: keyof SiteLinks, link: string): string =>
+  name === "email" && !link.startsWith("mailto:") ? `mailto:${link}` : link;
 
-        <li>
-          <a className={styles.link} href="https://twitter.com/SmaugPenDraig">
-            <span className="screenReader">
-              {content.footer[language].twitter}
-            </span>
+export const Footer = ({ language }: FooterProps): JSX.Element => {
+  const { links, text } = useSite();
 
-            <TwitterIcon />
-          </a>
-        </li>
+  return (
+    <footer className={styles.footer}>
+      <nav className={styles.nav}>
+        <ul className={styles.list}>
+          {(Object.keys(icons) as (keyof SiteLinks)[]).map((name) => {
+            const link = links[name];
+            const Icon = icons[name];
 
-        <li>
-          <a
-            className={styles.link}
-            href="https://www.instagram.com/meurigjenkins.film/"
-          >
-            <span className="screenReader">
-              {content.footer[language].instagram}
-            </span>
+            return !link ? null : (
+              <li key={name}>
+                <a className={styles.link} href={hrefFor(name, link)}>
+                  <span className="screenReader">{text[language][name]}</span>
 
-            <InstagramIcon />
-          </a>
-        </li>
+                  <Icon />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
 
-        <li>
-          <a className={styles.link} href="mailto:meurigjenkinscyd@gmail.com">
-            <span className="screenReader">
-              {content.footer[language].email}
-            </span>
-
-            <EmailIcon />
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <p className={styles.info}>
-      &copy;&nbsp;Meurig Jenkins&nbsp;
-      {Intl.DateTimeFormat("en-GB", { year: "numeric" }).format()}
-    </p>
-  </footer>
-);
+      <p className={styles.info}>
+        &copy;&nbsp;Meurig Jenkins&nbsp;
+        {Intl.DateTimeFormat("en-GB", { year: "numeric" }).format()}
+      </p>
+    </footer>
+  );
+};

@@ -1,0 +1,60 @@
+# The order of the main menu. Use the folder names from this content folder.
+# A folder that isn't listed here still shows up, at the end of the menu.
+menu:
+  - home
+  - about
+  - projects
+  - shortfilms
+  - pendraigfilms
+
+# The order of the pages inside a folder, both in its dropdown menu and on
+# its page. Same rules as the menu: anything not listed goes at the end.
+order:
+  projects:
+    - personal
+    - commercial
+  projects/commercial:
+    - martini
+    - experience
+    - apparel
+  projects/personal:
+    - luna
+    - brummie
+  shortfilms:
+    - stanza
+    - trosech
+    - vultures
+
+# Where the icons at the bottom of every page link to. Remove a line to hide
+# that icon.
+links:
+  youtube: https://www.youtube.com/@ffilmiaupendraigfilms6144
+  twitter: https://twitter.com/SmaugPenDraig
+  instagram: https://www.instagram.com/meurigjenkins.film/
+  email: meurigjenkinscyd@gmail.com
+
+# Small bits of text used around the site. Most of these aren't shown on
+# screen, but are read out to people using screen readers.
+english:
+  chooseLanguage: Choose Language
+  showSubmenu: Show pages in
+  previousSlide: Previous slide
+  nextSlide: Next slide
+  previousPage: Previous page
+  nextPage: Next page
+  youtube: View my Youtube page
+  twitter: View my Twitter page
+  instagram: View my Instagram page
+  email: Email me
+
+welsh:
+  chooseLanguage: Dewiswch Iaith
+  showSubmenu: Dangos tudalennau yn
+  previousSlide: Sleid blaenorol
+  nextSlide: Sleid nesaf
+  previousPage: Tudalen flaenorol
+  nextPage: Tudalen nesaf
+  youtube: Gweld fy nhudalen Youtube
+  twitter: Gweld fy nhudalen Twitter
+  instagram: Gweld fy nhudalen Instagram
+  email: E-bostiwch fi

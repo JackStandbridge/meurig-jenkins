@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 
-import { content } from "@/content/shortfilms";
+import { useSite } from "@/components/Site";
 
 import styles from "./pdf.module.scss";
 
@@ -17,6 +17,7 @@ export type PDFProps = {
 };
 
 export const PDF = ({ filePath, language }: PDFProps): JSX.Element => {
+  const { text } = useSite();
   const [numPages, setNumPages] = useState<null | number>(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [renderedPageNumber, setRenderedPageNumber] = useState<null | number>(
@@ -63,11 +64,11 @@ export const PDF = ({ filePath, language }: PDFProps): JSX.Element => {
       >
         <div className={styles.buttonWrapper}>
           <button onClick={prevPage} className={styles.prev}>
-            <span className="screenReader">{content[language].prevPage}</span>
+            <span className="screenReader">{text[language].previousPage}</span>
           </button>
 
           <button onClick={nextPage} className={styles.next}>
-            <span className="screenReader">{content[language].nextPage}</span>
+            <span className="screenReader">{text[language].nextPage}</span>
           </button>
         </div>
 

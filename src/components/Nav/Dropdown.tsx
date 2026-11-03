@@ -9,12 +9,14 @@ export type Item = {
 export type DropdownProps = {
   handleClick: () => void;
   title: Item;
+  toggleLabel: string;
   items: Item[];
   expanded: boolean;
 };
 
 export const Dropdown = ({
   title,
+  toggleLabel,
   items,
   handleClick,
   expanded,
@@ -25,8 +27,12 @@ export const Dropdown = ({
     </Link>
 
     <div data-dropdown-container={true} className={styles.dropdownContainer}>
-      <button className={styles.dropdownButton} onClick={handleClick}>
-        <span className="screenReader">Toggle projects submenu</span>
+      <button
+        className={styles.dropdownButton}
+        onClick={handleClick}
+        aria-expanded={expanded}
+      >
+        <span className="screenReader">{toggleLabel}</span>
         <svg
           height="20"
           width="20"

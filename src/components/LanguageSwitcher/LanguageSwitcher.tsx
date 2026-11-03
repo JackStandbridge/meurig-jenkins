@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { isLanguage } from "@/guards/isLanguage";
 import { languageInfo, languages } from "@/types/language";
-import { content } from "@/content/site";
+import { useSite } from "@/components/Site";
 
 import styles from "./languageSwitcher.module.scss";
 
@@ -19,6 +19,7 @@ export const LanguageSwitcher = ({
   language,
   updateLanguage,
 }: LanguageSwitcherProps): JSX.Element => {
+  const { text } = useSite();
   const [expanded, setExpanded] = useState(false);
 
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -95,7 +96,7 @@ export const LanguageSwitcher = ({
         id={buttonId}
       >
         <span className={"screenReader"}>
-          {content.languageSwitcher[language].prompt}
+          {text[language].chooseLanguage}
         </span>
 
         <Image

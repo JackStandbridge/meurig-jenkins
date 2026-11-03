@@ -1,39 +1,47 @@
 import type { Language } from "@/types/language";
-import type { ContentList } from "@/types/messages";
+import type { Card } from "@/types/content";
 
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./cards.module.scss";
 
 export type CardsProps = {
-  items: ContentList;
+  cards: Card[];
+  headingLevel: 2 | 3;
   language: Language;
-  section: string;
 };
 
 export const Cards = ({
-  items,
+  cards,
+  headingLevel,
   language,
-  section,
-}: CardsProps): JSX.Element => (
-  <section className={styles.grid}>
-    {Object.values(items).map(({ messages, poster, id }, i) => (
-      <Link className={styles.link} key={i} href={`/${section}/${id}`}>
-        <article>
-          {!poster ? null : (
-            <picture className={styles.picture}>
-              <Image
-                className={styles.poster}
-                src={poster}
-                alt={messages[language].title}
-                width={600}
-                height={337}
-              />
-            </picture>
-          )}
-          <h2>{messages[language].title}</h2>
-        </article>
-      </Link>
-    ))}
-  </section>
-);
+}: CardsProps): JSX.Element => {
+  const Heading = headingLevel === 2 ? "h2" : "h3";
+
+  return (
+    <div className={styles.grid}>
+      {cards.map(({ path, title, poster }) => {
+        const image = poster[language];
+
+        return (
+          <Link className={styles.link} key={path} href={path}>
+            <article>
+              {!image ? null : (
+                <picture className={styles.picture}>
+                  <Image
+                    className={styles.poster}
+                    src={image.src}
+                    alt=""
+                    width={image.width}
+                    height={image.height}
+                  />
+                </picture>
+              )}
+              <Heading>{title[language]}</Heading>
+            </article>
+          </Link>
+        );
+      })}
+    </div>
+  );
+};

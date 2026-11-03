@@ -2,11 +2,15 @@
   "name": "meurig-jenkins",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
-    "start": "next dev",
-    "build": "next build",
+    "start": "tsx scripts/prepare-content.ts && next dev",
+    "build": "tsx scripts/prepare-content.ts && next build",
     "next-start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-content": "tsx scripts/prepare-content.ts"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -17,6 +21,8 @@
     "embla-carousel-react": "^8.0.0-rc02",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "image-size": "^1.1.1",
+    "js-yaml": "^4.1.0",
     "marked": "^4.3.0",
     "next": "13.2.4",
     "next-redux-wrapper": "^8.1.0",
@@ -29,11 +35,13 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/marked": "^4.0.8",
     "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^2.8.8",
-    "sass": "^1.61.0"
+    "sass": "^1.61.0",
+    "tsx": "^4"
   }
 }

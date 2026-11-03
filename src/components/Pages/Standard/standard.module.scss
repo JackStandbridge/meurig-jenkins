@@ -1,0 +1,82 @@
+@use '@/styles/mixins';
+
+.bigTitle {
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	font-size: 4rem;
+	letter-spacing: 5px;
+	font-feature-settings: "lnum";
+
+	font-family: Bogart, sans-serif;
+
+	@include mixins.mobile {
+		font-size: 3rem;
+	}
+}
+
+.title {
+	margin-bottom: 1em;
+}
+
+.bannerContainer {
+	position: relative;
+
+	&::before, &::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: black;
+
+		width: calc((100vw - 100%) / 2);
+		height: 100%;
+	}
+
+	&::before {
+		right: 100%;
+	}
+
+	&::after {
+		left: 100%;
+	}
+}
+
+.banner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: contain;
+
+	background: black;
+	color: white;
+}
+
+.photos {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: var(--columns);
+
+	@media (max-width: 500px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.photo {
+	display: block;
+	width: 100%;
+	min-width: 0;
+	height: auto;
+}
+
+.pdfs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.group {
+	margin-top: 2rem;
+}

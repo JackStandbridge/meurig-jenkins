@@ -4,7 +4,7 @@ import type { Language } from "@/types/language";
 import useEmblaCarousel from "embla-carousel-react";
 
 import { Slide } from "./Slide";
-import { content } from "@/content/site";
+import { useSite } from "@/components/Site";
 
 import styles from "./carousel.module.scss";
 
@@ -17,6 +17,7 @@ export const Carousel = ({
   children,
   language,
 }: CarouselProps): JSX.Element => {
+  const { text } = useSite();
   const [emblaRef, carousel] = useEmblaCarousel({
     skipSnaps: true,
     inViewThreshold: 0,
@@ -40,13 +41,13 @@ export const Carousel = ({
 
       <button onClick={handlePrev} className={styles.prev}>
         <span className="screenReader">
-          {content.carousel[language].previousSlide}
+          {text[language].previousSlide}
         </span>
       </button>
 
       <button onClick={handleNext} className={styles.next}>
         <span className="screenReader">
-          {content.carousel[language].nextSlide}
+          {text[language].nextSlide}
         </span>
       </button>
     </div>

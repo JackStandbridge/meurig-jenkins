@@ -1,29 +1,32 @@
 import type { Language } from "@/types/language";
+import type { HomeText, Translated } from "@/types/content";
 
 import { Fragment } from "react";
-import { content } from "@/content/home";
 import styles from "./hero.module.scss";
 
 export type HeroProps = {
   language: Language;
+  text: Translated<HomeText>;
 };
 
-export const Hero = ({ language }: HeroProps): JSX.Element => (
+export const Hero = ({ language, text }: HeroProps): JSX.Element => (
   <section className={styles.hero}>
     <div className={styles.videoWrapper}>
-      <video
-        src="/videos/banner.mp4"
-        autoPlay
-        playsInline
-        muted
-        loop
-        className={styles.video}
-      />
+      {text[language].backgroundVideo ? (
+        <video
+          src={text[language].backgroundVideo ?? ""}
+          autoPlay
+          playsInline
+          muted
+          loop
+          className={styles.video}
+        />
+      ) : null}
     </div>
 
     <div className={styles.content}>
       <h1 className={styles.title}>
-        {content[language].title.firstLine.split(" ").map((word, i) => (
+        {text[language].topLine.split(" ").map((word, i) => (
           <Fragment key={i}>
             <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
               {word[0]}
@@ -35,7 +38,7 @@ export const Hero = ({ language }: HeroProps): JSX.Element => (
 
         <hr className={styles.hr} />
 
-        {content[language].title.secondLine.split(" ").map((word, i) => (
+        {text[language].bottomLine.split(" ").map((word, i) => (
           <Fragment key={i}>
             <span className={/[A-Z]/.test(word[0]) ? styles.firstLetter : ""}>
               {word[0]}
@@ -46,7 +49,7 @@ export const Hero = ({ language }: HeroProps): JSX.Element => (
         ))}
       </h1>
 
-      <p className={styles.subtitle}>{content[language].subtitle}</p>
+      <p className={styles.subtitle}>{text[language].subtitle}</p>
     </div>
   </section>
 );
