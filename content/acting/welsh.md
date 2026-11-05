@@ -1,11 +1,7 @@
 ---
-menu: amdanaf i
-title: Amdanaf i
-photos:
-  - file: profile2.jpeg
-    description: Meurig Jenkins
-  - file: profile1.jpeg
-    description: Meurig Jenkins
+menu: actio
+title: rîl sioe
+video: fHXYuxmlE_E
 ---
 
 Ffilmwr o Aberystwyth wyf i, sydd yn awr yn byw yn Sir Fôn, Gogledd Cymru.
@@ -17,3 +13,9 @@ Bu bron imi gael fy magu yn y theatr. Cymerais ran mewn dramâu (<i>The Goalkeep
 Ar hyn o bryd rwyn dilyn gyrfa yn y diwydiant ffilm, fel actor, dramodydd a chyfarwyddwr.  Rwyn ceisio perffeithio fy arddull, ac archwilio cymaint o gyfleoedd a phosibl.
 
 Croeso i chi <a href="mailto:meurigjenkinscyd@gmail.com">gysylltu</a> â mi os ydych am gyd-weithio, neu’n gallu cynnig cyfle imi gymryd rhan yn eich prosiect.
+
+
+CV
+---
+
+List o pethau dw'i di bod mewn
