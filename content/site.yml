@@ -2,6 +2,7 @@
 # A folder that isn't listed here still shows up, at the end of the menu.
 menu:
   - home
+  - acting
   - about
   - projects
   - shortfilms
