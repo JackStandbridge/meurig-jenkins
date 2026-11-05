@@ -1,11 +1,7 @@
 ---
-menu: about
-title: About me
-photos:
-  - file: profile2.jpeg
-    description: Meurig Jenkins
-  - file: profile1.jpeg
-    description: Meurig Jenkins
+menu: acting
+title: Showreel
+video: fHXYuxmlE_E
 ---
 
 I am a film maker from Aberystwyth, now living in Anglesey, North Wales.
@@ -17,3 +13,9 @@ I practically grew up in the theatre. I performed in plays (<i>The Goalkeeper’
 Now I’m pursuing a career in the film industry as an actor, writer and director. I’m seeking to refine my style, and explore as many opportunities as possible.
 
 Please <a href="mailto:meurigjenkinscyd@gmail.com">get in touch</a> if you are interested in collaborating, or can offer me any opportunities to take part in your project.
+
+---
+title: CV
+---
+
+A list of all the things I've acted in
